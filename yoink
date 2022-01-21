@@ -1,0 +1,1082 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <mmsystem.h>
+int boss1=0;
+int boss2=0;
+int main()
+{
+    start_zone();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+void start_zone()
+{
+    HANDLE hConsole;
+    hConsole=GetStdHandle(STD_OUTPUT_HANDLE);
+    system("cls||clear");
+    PlaySound("start_zone.wav", NULL, SND_ASYNC|SND_LOOP);
+    SetConsoleTextAttribute(hConsole,7);
+
+    printf(
+        "   777777771717771777777777   77777777         777777777    7777777777777777777777       777777777777777777777       77777777777777777777777   777777777777777777777777    \n"
+        "   780525552525252522252211785 1872252128       70515252106 78804555455555555545556087777080954545455545455545688177748095454555455555555251708 891545454545454555555257507\n"
+        "  787                      787 05       87      16       78788                      781708                      7857087                      8770                       18 \n"
+        "  10                       017764       87      19       7858                        7818     7            7777  7878   7777                86778  777777               87 \n"
+        "  18   777 7777777777777770877765       0777   726   7   1069  7777 7777777777 77777 7850  7777 7777777777 77777  020  777777777777777777775077707 7777777777777777777784  \n"
+        "  10  7 7  1866995454555211777795       8777777754  7 7  7806  7777 2809696680  777  7898  7777 10860969807 7777 7858  7777 7086649495454552777787 7777 7086699444454221   \n"
+        "  18  777  1077777           7795       0777777754   777 7089  777  1877777750  7777 7060  7777 78777777187 7777 7090  7777 781777777777     77787 7777 781777777777       \n"
+        "  16  7 7  7677               755   7   8177777795  777  7804  77   1677777729  7777 7868  7777 70777777107 7777 7848  7777 7017777777777 7 77778  7777 78277777777        \n"
+        "  16   7   147                 52       0899469609   77  7085  7 7  7677777719   777 7006  777  7077777770   777 7090  7777 7886494555552552777787 777777806495455251117   \n"
+        "  14       797                 52       7777777777  7 7  7885   7   7977777714    7  7806   77  7677777776  777   848   777 777777777777777180778  777777777777777777778   \n"
+        " 714       747                 51                        7081       7977777714       7889       7677777776     7  850                        5818  77777               8   \n"
+        "  15       747                 21                        7802       7477777715       7804   7   7977777779    7   8102                        858  777777              87  \n"
+        " 715       757                 57       7777777777       7081       7477777715       7085       7677777779   7    07796177777777777777   7    060  7777  777777777777778   \n"
+        "  11       7477               727       8042525585       7801       7477777712        805       7977777714        077777771711111155807 7 7   068   777 7085511111177777   \n"
+        " 711       74777             7757       9177777751       7087       7977777722        082       7677777714        97777777777777777726   7 7  900  7 7   927777777777      \n"
+        "  11       7821777777777777777757       9777777727       7807       7051111105        802       7041111109        677777777777771711607       906   7    0011177777777777  \n"
+        " 771       7511111111111117711747       4777 77711       7087       7511111157        081       7521111121        47771571111111111121        409    7   121111111111111747\n"
+        "  77                        47757       577   7717       7867                         691                         47770                       599                        07\n"
+        "  75                       127727       27     717       7451                        7422                        757797                       425                       47 \n"
+        "   147                    7677717       47      11       757417                     7477257                     747721                      74175                      79  \n"
+        "    717771711111111111117717 7 7777177777       777777717777771171711111111111111112177777117111111111111171711117 777777171711171111171717217777771717171711111711177717  \n"
+        "        77777777777777777           7                 7         7777777777777777777         7777777777777777777         7777777777777777777       7 77777777777777777      \n"         );
+
+    int menu_option;
+    printf("\n\n\n\n1.Go to the Undergrounds \n");
+    printf("2.Go to the Golden Fields \n");
+    printf("3.???? \n");
+    scanf("%d",&menu_option);
+    if(menu_option==1 && boss1==0)
+        alegere1();
+
+    else if(menu_option==1 && boss1==1)
+    {
+
+        printf("You've been here already, go explore the other zones, there is nothing left here.\n");
+
+        Sleep (3000);
+        //Sterg ecranul
+        system("@cls||clear");
+
+        start_zone();
+    }
+    else if(menu_option==2)
+        alegere2();
+    else if(menu_option==2 && boss2==1)
+    {
+
+       printf("You've been here already, go explore the other zones, there is nothing left here.\n");
+        Sleep (3000);
+        //Sterg ecranul
+        system("@cls||clear");
+
+       start_zone();
+    }
+
+    else if(menu_option==3 && boss1==1 && boss2==1)
+        printf("lol no");
+    else
+        printf("you shouldve type something smarter than that");
+}
+
+
+void alegere1()
+{
+    system("@cls||clear");
+    Sleep(2);
+    PlaySound(0,0,0);
+    printf("You have chosen to go to the Undergrounds.");
+
+    Sleep (3000);
+    //Sterg ecranul
+    system("@cls||clear");
+    printf(
+        " 7811111110                    7562177777777777771467      7545211111111112551   99255555555252525555427    02252511087111121111111111125457      754521111111111525221107\n"
+        " 92       8                   847                   09   907                 782 8                    718  19       87                     78   781                     87\n"
+        " 87       0                  87                      51 07                     100                       8 57       0                        8 55                       8\n"
+        " 0       78                 87                        08            7 77        85                        86       78                        787                       78\n"
+        " 8       75                11       75111171157       14       47777777797      57      41111111111       58       10       7777777777       70       7211111111111111157\n"
+        " 75       77                0       21         8       77      17        77      97      0         76      75       51      787777777779      7       79                  \n"
+        " 77       2                 2       9          17      7       77777777771       4      71          9      77       67      77         1      7       9          77777777\n"
+        " 17       5                77      77          57      7                         9      77          5      17       0       17        77      7      72         71      0\n"
+        " 97       8                57   77 97          0  7 7  1  7 7               7 7 70    7 47          8 7    07 7 7   8   7   8         47  7   7 77   11         67      8\n"
+        " 8777777 70                47 7777 8          79 7777  2 7777             77777 14 7777 0          57 77   8  7777 70  777  8         87 777 77 7777 27         0      70\n"
+        " 8  77777 1777777777777777707 7777 74   7 7  79  7777 71 7777 711711111717 7777 91 7777 87        11 77   18 77777 20 7777 78         8 7777 71 7777 797777777778  777 12\n"
+        " 8   77777               7 87  7777  777777777 777    07 7777 92   7 7  81 7777 87 7777777777777777 77    85 77777 85 7777 15         0 7777 10  7777  777777777777777 97 5277147  2277157  7577757\n"
+        " 62     777777777777777777 88     777        7777    78   7 7 8         87  7   8   7 777 7     7 777    067  7    87   7  47        70 7 7  587    7777777 7777777    0 97    78 42    70 70     81\n"
+        " 81       7777777777777777010      77777777777     180       0         0      70        7777777777    10 27       8       87        61      8787      777777777       878 7777 87877777 91877777718\n"
+        "  281777   7 7 7 777 777 70 7877                7187 8 7777778         877777 28   77777777777777777282  87  777 78       0         87     70  601777777777777777777770 18777748 78777720  87777787\n"
+        "    77255555555552555252547   72949544454544449427   751525257         151522111225555525122212152177    752525221125545551         755555547    7122121212121215252227  725417    15527    12421   \n");
+
+    Sleep (3000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+    int path1c;
+    printf("You started walking on the path indicated on the map you picked up.\n You were walking for 10 minutes when suddenly the path split into 2.\n You have to choose to go either through the forest or walk up the hill.");
+    printf("\n\n1. Go through the forest."
+           "\n\n2. Go up the hill.\n");
+    scanf("\n\n%d",&path1c);
+    if( path1c==1)
+        forest();
+    else if(path1c==2)
+        hill();
+
+
+
+
+}
+
+
+
+
+
+
+
+
+void forest()
+{
+
+    Sleep (3000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+    printf(
+        "LuDDDVXPMgRQQMRgRgRDgDRgMdbDZEggRMRgRQQgMggEgMRMQQQgRDEDMZQMggggQRQQBMRQBQQgQQQgMdPrVPEdgEZZDPbdPYKbdqDEdqdDgMMMQRQQRMQRMgQDMgRgEZgDbPgZRgQMQRQgMEbgRggdEgRDMQBggMDDQMMgQDMgDMQgggQgggZdZEEZggRQgZMMRgQK\n"
+        "vvkDXXZZZMDRRQgRggZgDgDRDPPgEZDgDgZEZQRMgQgZdMgRgQMggDPggMQMZgZRgQMQgRgRgQgMRBQMDDJibZEMDggMqKPZqSbDbPZZbdbZZggRggDRMRMMZMggEMggdgZZPPEgDggRDMggggPggZEMgMZZZRRQgMDMgRgMgRDgbgMDDgggggbEPbKPdDZgZgggZDDP\n"
+        "kUUUSkDgZZggRMRMMDDgMEgggEgdgggDRqPggMQdggMgggRgMDMEEZMgRggZgRQgRRQdZgRgRMQQBgZZDVrkQgggRgQDDDMZRggggggDMgMZDZQDDZggDgggRggDMggPddDddPgdddDDgZMggMQRQgRgMMQgDDggMgQgMRQRQRRggEDDgPdPPPPZDdPPDEgDMdEZZDgb\n"
+        "qIjIXgEPPDERgMgMMRggZMZDZDZggMggdgPZEgQQggggDMKPPddbPgbSVPqdgRMRRBQMdgMQMQQQMbdgDuvRgMZdgREDdgRQRRSXXggdbgZgZZDgDgEbqZDgMMDRZDbqSEZgdddggQgggggQggMRZgRRDgMMZRgRggMRRQRQgQRRMDqDKVuUUdKbPPPDZDEgMDdDDMDP\n"
+        "kJUVPEDPPDQQQMMDgZgDgMgbDdZgQgRPDQMEgbKDdqDdbddPbddPdPZVPRMMQgMQQQBQRRQggPMEESKPKivdPbKPQEZgdggDZKIqqZKuDRZdDEgEdVXSkPbbgERDPqZdEPgDRMMgRDgRQgDqPuKPDPbZgZZEddMDQggMQRQMgMQQQMgSJXKqPZgdEqdEDEDDMgEPZdDP\n"
+        "UUUVISIdqEPMRQgQMQbZQBQQgMgBQBZEMQEKXPjkEgDbKEqKqPZPZggQBBQBggMQQBQQQBRddqVqXXvILiSPukkkvkKVXDIkvIMDqIjKbdXEEgZgPPXJjDdgZgDPKddgbMgQMQgMgQMQgDKKVrrVbDqPdgPEPbDQggDMgQRQMRRQRBRPJkPgRggRDPqZPPZDDRPurYPZ\n"
+        "XUqKSVPPQBBBBBBBBBBBBBBBBBBQBBBPPERZgDgSgEdEPISVqDQQQXivBQQMgZQQBQQQQQQgMMPqPuuIviqPDPLvJkuLVIJrsbgXXPEqVPSSEVKqPPPSEgMgMDgddEMggMQDMQRDRQQZZgbIVJYLXPbdgEMEqVPEZPDDRgQRQRQRQQBDXqZgRMMggbEPdqZdgRZsiiPb\n"
+        "uuXDPZDqPEqIviii i            KBbbdggDZggEZgKPqDBBgv   ZQQRMdgMQDQQBQQRQgQgZKuYViiSRgvvPqqVSKdPXPZEZbggEPdXbPdXXPddgMQgMgMDMggDRDgZEDQdEZDERggdKkuuSdZZMZZEgbPdZZdPggMMQQQQQQBQQEPKgMRgRgMgZPbdggQdVYugK\n"
+        "kri                            qBBBBBQBBBQBBBBBBP     LBQMQDggQQgbQQQRRggMQMgsLvivMQKrDQMDPSPZRggZZbdbZPZDdSuPEqqPgMgMRMQggdggQgMZEZZPPPbIPPDIVXPKdqggDEdKPPEqSXddEDMgRMQQQQQQBQEuSDMDgDgZMdqbZEZZgbdZQv\n"
+        "r                                 vZBBgPusvri         QBQQMMDQQBRDQQQRgMDMgMbUvrYgQPirQRgQDdEgZgZgggZgdqPDPssEXqPggMgMDQgMgZbDIXqbdZXXkbqPVVUUJVPPPPZdPbPPPZMPvKqDbZgMgRgQQQMBQBgEISPEEddZdZqPPDZZgQgQZi\n"
+        "v                                                    qBQQMRggMQQQRQRQgRggggZZPvrEQSirDBgMEDPEDRRMgQRQMggMEdqPbdPZPZDgEZDgEDEquUjukKXqKqqZPXqPPbbdKPIXZRDQBBBBgrvPEZEggQgMRQRQQBQQDDkvkPdZZQgbXPZgbQQQRE \n"
+        "r                                                   iBQQQQMQRQRQRQQQRMggggDDddvjESiLBBQQBgVSZgZMgQgMDMZQZPPggZqPDKLEgEPEPEPbXvubvvUKPESZZPKSXqVKSPbPKMRZUvi     IPPEbRgMgRRQMRQBQMggJskEdPKZggPPqPEQRQRv\n"
+        "r                                                   BBBQQRQgQQQRQQQQQMgZgggggdVVXrkBKvrrLVZDBQgDggRDdEgggbZZgbEdVuUUVdduISXkPvuPIuZEgggZEVVXqPKKEMRPYi          iEqdPdMDgMQQQgQQBQQMRXYjVkkuPRQddPZMQggE\n"
+        "i                                                  KBBBQQBMRRBQQQQQQMQgDZdPgbKIVvvv         rkQQZRDbSZEPsPbdDdPqUugBQBPuIbqdbsSbIXSVPMEZEdPdIuSqui               UqEuKRgZRMQQggBQQRQMBXvrssviIZggDbMMQgg\n"
+        "i                                                  BBQBRQRQRQQQQBRQgQgMddqEKqkUvi              rPRZVSqdujIPZqJkVQrrvvvPBBBBQDkKKISdKPEdPDZZXPY                    EdUuQDgMRRQgQQBQQQBQBguvvvvrUZQMDEgMQg\n"
+        "v                                                 ZBQQQQRRRQQQRQQQRMggbbXbbuUviri                qPUVPSXKgkEbdqQi       iuQBBbYYYIIPPddbdZdBJ                     rgIYgMgQMQRQQBQBQBQBQQRqrirvvkdRggZgMg\n"
+        "v                                                iBRQRQMMgQQBQQQQQMggDESVXusuviui                 iiKRBDZDDVqQQ             IKVvJuusIXqKPkSi                       uqvEZZgQRQQQQBQBQBQQQQRbuvrvvSDggMgRg\n"
+        "v                                                dDggggMgQRQMQQQRRZggZPqqSvvvrvk                      YdEqji                  iXZZKZdEUvii                          LrXgbMgQMQBBQBQBQBRQQQQQPYrivbdggQRg\n"
+        "v                                               iKERQgMDQRQQQRBQQDgMgEdPgvvvvLv                                                   irr                                vkPdgRgQQBQQQQQBQBRQQBQQPkviVZZMMQg\n"
+        "r                                               uXEQQRgQQQQQRQQQgDMRDgbgPvsvYr                                                                                       iuPPQgMgQRQQQQBQBQQQQQQRMgErLPZDRRR\n"
+        "i                                              vKPQQBMQQQQQQQQBQgQQggMggUYLvi                                                                                         iXqZQggQRMBQQQBQBQBQQQBQRMuiPbggQg\n"
+        "i                                             iZPMQBgRRBQBQQQBQRMQRMRMEdjJr                                                                                            subggDQMMQQQQQQQBQBQBQBQQqiXDDMgR\n"
+        "i                                             PbQQBQgMQQQMQMQQQgRgggMKUKUJi                                                                                             suPPMgRgQQQQQRQRQQBQBQBQQivPEMgg\n"
+        "i                                            kdgQBMRMRQQRQQRgQMMggZggPrXIsi                                                                                             isJVPZgMMQDQRQRRRBQQQBQBQPisKRgR\n"
+        "                                            rqdZQQQMQgBQQQQgQMRMQggdZdJIVvr                                                                                              isjPEMgRggMQQQgRQQQBQBQQDXvKZRD\n"
+        "                                            SbMgRQRQMQQQRQgRgMMQQQDZDDkqkvi                                                                                               vUPDgggggQQBQQQBQBQBQQQQgbSZgg\n"
+        "                                           rKDQDQRQMMQBMMggRRgQQQgZEgZXKIvi                                                                                                IqbZbggRQQQBQBQBQQQBQBQQMEEMZ\n"
+        "                                          iUPRggQQQQggDMRQgQMQMQRgdZgDPEXv                                                                                                 rKgdbDggQQBQQRBQQQQQBQQQQDDRg\n"
+        "                                         rUbDDgRQRQDMgQQQMQQMgQRQDZqMgEXVi                                                                                                  VKPdDZgQBQBQMQBQBQBQBRQRQZQg\n"
+        "                                        iLSgZgQQRMZgMQRMMRQQMQRQggdPEEqVji                                                                                                  rIkPDggQQBQQgBQQRQQBQQMQgZgM\n"
+        "                                       ivUZgQRQMQgZDRMMMQRQQQgQRgggXDqSuY                                                                                                    uskMDQMQMBgMQBQQMQQBQQMQZgg\n"
+        "                                      ivIDDRgQMQMREQMMMQgQQQRRQQgQEKEVsLv                                                                                                    ivuERgQMQQRRQQQRQQQQQRQMMDM\n"
+        "                                     ikPRgQRQRQRQggQQgQMQMQMQRBMMRZIMXYvv                                                                                                     vJEgMRQRQgQQQQQRQMBRQRQRMD\n"
+        "                                    iqZQgQQQRQQBQgDQDQMQMRMRQBQQgQdSgPvLL                                                                                                     vsPgDgMQMRQQQQRQRQQQMQQQgg\n"
+        " iUuSVbPPSPddurii                  iDgQgMRQMRQQQBgQgMRQMRRREqZBRRQDXMZJss                                                                                                     iYVDggQgggQQQQQRQQBQQRQgRD\n"
+        "BBBBMMggZDEPSkUujVIVvvii       rXggggBMggQMRQBQQMQRRRQQRgQQQgPZBMQMdgQusLi                                                                                                     JkZZEDMgQQQQBRQQQQBQQQQRg\n"
+        "gEgQQQBQBQMEPqqPEgRRMdZEEgMKSXBBgbMgRQEDQMQQBQBRgRRMQQBDQQQQBQMRQQRZMREkji                                                                                                     vVZgVZMMQBQBQQQBQBBBRBQQg\n"
+        "ZMQBQQQQRRgZdRMQQBBBQQgZKdMBRPKDgBRZgMDQRQQBBBRggQMQQBRMQQRRRQQMMQZDZBQgVv                                                                                                     iPDEkPRRBQBQBQQQBQQQQQBQR\n"
+        "QRQRRgMDgERgRgQRQMRRQQBQQgMZUIRQQZgZRgQQQQBQQRMDQQQQBQRQBgQRRgQgQgPZSRQQEsi                                                                                                     SXgIbgBBBQQQQQBQQQBQQQBM\n"
+        "RRMMgQgQMQRQgMRQMQMRggZMMQZIuZMMEgMMMQRQQQRQRQgQQBQBQggBRRMQQMgRRgXZvXBBguv                                                                                                     vuZPPMRQMQQBQQRRDQQQQQQQ\n"
+        "RgQMRgQQQRQgRDQMQQBQQRQgRRQqDMRDQQDgBQQRQRQMQQQQBQQQQPPQQQQRQQQMBMZZVrQQQUrv                                                                                                    vSMqbDQQQQBQQRMDgQQQQQQR\n"
+        "RQQRZgZgXEMEgMDMgQRBQQQBQQQMgDMQQgbRQQMRgRQBQQRBQQRQQQPQQQRQRBDQQQggXvgQMXiu                                                                                                    vKdSVggQQQQBQQggDBQQRQQQ\n"
+        "RgMDDZMESPDPgMRDgMRgggQQBQQDggBQQPgQQMQgMMBRQMQQBRQQQQMRQRQQQQgZQRREIvMQRguri                                                                                                   vkPUUgQQQQBQBQQRRQQQQQBR\n"
+        "MQgDPgMESDZggQRMgQRQDMMQQBRZgQQQEDMQQQRRMQRQMQQBQQRQQQBQMRQBQBMDRQgPkvQBMQQvY                                                                                                   rvXbXbDQgRQQQQQQRBQQQQQB\n"
+        "QMREqMZKPqggQMQgMRQMQgggBQRZQRQDZgBQBRQMQRQQQQBQQRQQBQBQQMQQBQQdQQMPKriQBRBPYP                                                                                                  rvPDZEDQRDRgBQQQQQBQQQBR\n"
+        "MMDdgQPPZSEQMQQMgQgMMgdDgBEggQgEdBQBQQRQQQQBQBQQRQQBQBQQMQgQQBREQBZPVi  gBBgrMb                                                                                                 YIbZEggQMgMRQQQQMQQQQQQQ\n"
+        "ggEbBEdSZkEQQRdPMDMgMDDgDKdgRgREgQQQBQQQBQBQBQBQBQBQBQQQQMMgQQRPBQdqP    jBBkiZd                                                                                                UKdPZgQQREgDQQQQQQBQQQBR\n"
+        "KRMEgggqdbgBgqqMgQMRgRMESPERZZgBQBQQQQRQQQQBQBQQQQQQMQMBQQRgQQMZRMPgEi    vBBZrKB                                                                                               skuIbQMBQZZQQQQBQQQQQQQQ\n"
+        "ZZDEggQdZdQZVEBQQQQgdSVUKdgDZgQQBQQQQQQRQQBQBQBQQRBQQQRRQRQgQQREggDDZi     iBBQskB                                                                                              visSgRBBBgQQBQBQQQQRBQBM\n"
+        "gEdQgZgRDggZUPRKXXIKSqdMQQZZgQQQQQRQgQRQRBQBQBQQQBRQRQRMMQQgDBgZddggkv       BQgYPv                                                                                            ivrvPdQQBQQgBQBQQQQQBQQRM\n"
+        "MPgMBMEgQgQRgqkJVXZEgRBBQgggBQQQQRRMRRQRQQQQQQQQQQQgQQQRQBQDgRMEZPZPKPZi      BQZvQ                                                                                            rrrvVgQBQQRRgQQQQBQBQQQQR\n"
+        "DZDgQRZgMRMQgIUbdQMQQBQMbDMQQBBBgggQQQQQQBQBQQQQRQMQQQRQgQMgZQMRMgEgPEgqK      BQudU                                                                                           IiiuDMBQQQQDgMQQQQBQQQBQB\n"
+        "gDgMQgMgQQRRKkDMBQQQBMgdgRQQBBRZMRQQBQQQQQBQQQQRMgQQQQQQRMQZgMQRBRggdggkPq     JBqLQ                                                                                          iviJgMQMQQBggEQRQRRRBBBQQR\n"
+        "DgEMMMRQQQEPVDMBQQgQgdqRQBQBBMERQBQQQQQQQQQQRRDRgQRQRBQQRQgMgMQQQREgEDRRqbKXr  BBBXB                                                                                          rrUgbDZMRQQQggRQQQDZRBBBQQ\n"
+        "REEDQQgPPISKMRQQRgQZZKMBBQBQgDQQBQBRQMMZgMRRRgggRRQQQRBRQMRMZdQMQgEgQXSDQgbdgPuudBBB                                                                                        ivvIgPbDQRRgRggRQRMMBQQQBQQQ\n"
+        "ggdQRVYISPgQQQRMgQggbZQBBBQggQQQQQgRQRggMBRQMQQQRQQQQQRQRQRRPgggQBRQQQSuSBBQEDZIvvYRX                                                                                       vsPDqPDBBQZMgZMQRQdgQBgMQBQB\n"
+        "RZgRSudZgggQMZggQQQZDgBQBggMQQRgRZMQBRBQQRQQBQBQQRQRQQQRBQQRQggZRQBMQQQPudBQQMQMDXLvXi                                                                                     iJKgqXZQQMPggDIQQQQQRQQRMBMQQ\n"
+        "ggdXbMZMDDZDDgMQRMgMRQQBRZgQMQQQQQQBQQQBgEgQQQQQRQQQQRQQQQQQMRggDRQQRQQQbqRQRQMQgMDEdqvi                                                                                   dQBgJSRQQqKKMggRQQBQBQBQBQMgQ\n"
+        "MZXdQggRgDgZgRQRQRBQBBBgPqQMDgQQBQBQQQBQQQBQBQQQBQBQQgQQBQQRQgQgggQQQMBQDSQgQQQQBQBQRRKqi                                                                                 VBBBgsKQQbKPdgBgQQQRBQQQBQBQQQ\n"
+        "KdZRDZERgQgRQBQBQQQBBRPPbMRMDggQQBQBQBQBQBBBQQQQQBQQQRMBQQQQRQMMgRgRRQMQgKbQDgDgEgQBQBQRQRv                                                                              iQQQgPuIQbbbEgQMQQBRQQQQQQQQBQQ\n"
+        "kdRgggggQMRQBBBBBQBQQPbZQMRgggQQBQBQBQBQBQBQBQQRQQBQMgQQBQQQQRRgRgQMRMDgQZSSMMZMgPPPZZBBQQBQY                                                                          iSIZgMEEKPdbDRRQQQMQBBBQQQQBQQRQg\n"
+        "bMQQRMgQRQBBQRDEqPXPbMgMDQMgMBQQQBQBQQQBQBBBQBQQMQQQgMRMQBQQMQqPgRgQQQgMMQMVuXuIVPPPPPKQBQRBQQr                                                   iirvUkii iiiirrvrvvjudDDdEdgZgdqqZDBBBQRgQQBQBQBQQQQgg\n"
+        "QRBQQRQQBBREPXPqbPZbggRRQMQQQQBQBQBQQQBQBQQQQQBQQQQDQgMbRQQQBQdXDRgQQMMMQgMgMbPUviqgZbdVgBQRQBQ                                                  gBBBBBBBEKgBgPKbPPMBQBgQgMDgZggRZMgQQBBQgggQQQRQQQMQRMD\n"
+        "RQQBQBBBgPqgggEggRMRRQQMMQQBQBQBQBQBQBQQQQRQMQQQgRQQQMZEdBQQQBDDdggQQQQQgRZggQQQgPvgRdqSIDQQMBB                                                 BBQMDMRBMRZRDQBQQBQBMQQRRRRQgggQMQRBQBBBQBRQQQMQRQMQMQRQ\n"
+        "BQBQBQRqqERgMgDMQDgRBQQDgQQQBQBQQQQRQMQggRQRQbZZQQQQRMMDbRBBBQQZDdERgMQggDQgRMQRRgKvkDgDqjSQQPBj                                               BBgEDRQQQBQQBBQBBBBBBBQBRQQBQQQBQBBBBBBBBBBBQQMQRQMQMQMRg\n"
+        "gQQBQZqZMQQQggMREggQQQRQdRgQMQQQRQMQMggRDRgRZRRQRQRQRQDZdZZRBBQQMRXQMZgbZZZdMggMMdDXiYVDEbkDBMEBi                                            iQBRMQBQBQQQBBMbDDZdgMBQBBBBBBBQBBBBBSLvvvjjqqEbZEEdZEDZgDZ\n"
+        "RgQMZdMQBQQRgRQZQQQQQgRQgZQQQMQRQMRDggMRMMBZRQQDgDMgQMMdgbPVDBBMQRPZBPRDRXqXXDQMQgMMZksLudbXRZDQb                                           iBBQQQBBBBBBBgSYISkuujsPZVSXdPJvLvjYYirvVdDPZdgbEEgZMgRgQMRD\n"
+        "DMgEZQQBQBQRQBQBBBBBQRgBRDQBQQMRgDZZdgZgERgRDggRgMggMRMRDgEZPZgQQBEgEEdRbPqPRBQBQBQQQQgDssDDPdkPKPur                                       iMBQQQBQRQBESbvvsLkUSVSuSkuvLiiivJsvsJPZMRQQQgMQQgMgMRQQQRQQM\n"
+        "PgMDQQBQBBQQBQBBBQQQBQBBQDBQBRRgggDZgEgDZPdDMMQQQggZQgRgMggZDdMMQQZEZZMRgZDDBRRQBBBQBQBBQKqdEqqPqSEQQZki                                  iBRQBBBUvrdJvrkvuuIUISKVuuSXKvvXPXEdRQBBBBBQRQQMQRQRQMgMQQBQBQ\n"
+        "gRMQQBQBBBQBQBQQQBRQQBQBQMEDQRgQgggDZZEgZDZgRQQZEDgBQQQQRQMRgMMRRRDMgEPqZggQRRMQMQQQQBQRdMEPdEqqXISKbgBBBgv                               QBQBQBuirJkvvLJujkVuUIXPKbdbvYqgERQQQQQQQQQQQQQQgRQQRBgQQBQBQB\n"
+        "RZMgQRQRQgRgRMQgQQQZgRQgQMddEZDEDdZPXXPZggRMQMddQQQgQRBQBQQQQQQQBMRgMbKKKKqPgEDgMDgDDgMDZgMDZdPXEPdEDZQBQMBBBQgKkvii                     XBQQgQPvJUUuuusujukkuSIqqEZurjbQMRMQgQMQRQQQQBQBMQMQQQQRDQQQRQM\n"
+        "EdZRgMRgEMggZRDQgMMDqKKdbDPDZgZZggEESdDgdZZMRdSgDQMRMRMBBQgRQBRQRQggPPKqSqVXSqPEEgggggPPZgbEPbKEEdKZDPdMEZPggQQBBBBBBBBBgPYvi            MBQggDuuIIXVKSSukkSukKPPbDSiYKQQgDMMRQQQQQBQBBBQQQBQBQBQQQQQQQQ\n"
+        "PdQgRZZEDggDgMZdgdgXPukXqkVKPPRbqKDZDdEdbPEKddEbgggDgEMRQZDDMDMgMZDZgdqVPKKXbXdddEgdEPVkPPbbZEgEZEEEEqIqdZggQRMggRQggRBBBBBBBQBBBQBQQPjrLMQgMgESVqDbKSbPZPPKKkKKPbRjiUdQQgMQQQQRQQBQBQQQQQQQBBBRQPXdgDgd\n"
+        "KZgMgRZgERMMZRPSbDKPgQggqEDEbqPIIdZRgDPEEDDbKPqEdZZZPDdgZZPddEPDPEdDZMbPSKXbbKXbbZdEXPdbPggMZdPdbZbZgMqdgMZZMMRQMQMRgDEZZggQRQRQBBBBQZVkIXKPPZDDEgEZPEZgDgEDEZdDdgQJvdMBgDDQQQQQQBQQQQQBQBQBMEgRgbqPXXXU\n"
+        "MEQRZPMQQgQgZgDudgPZZSqkXPQdgKjqBRMZgPDgdkQMZPdZRDgZZqbKqqZZDKdbbPPSSVXPqXPPEdqqPXdEDEMggDPggPbdZbPKKIKZgMDZDKQggggDggDdZZggRRQgMEbIJJkukJVXqqEERggbddZdgZgZggggRMdibMBQggBQBQBQQRQQBBBQBQQPSUkuqZSXbbgq\n"
+        "ZggDPuKEbMPDZRdKPgKIkkXqkEEgPKUQDEXgRQgMbPgQRqUVqEEZEDEPXEEgPXqXSqPEPqXSPZDZdDPbKbgQbIZQRZkqEDEDqPXKqEEgEMgZqdPKPggMggZDEgEgggEPUuYvYXVSuUUIkuuVuSPRgZdEPddbPEPdZRirQBQRRBQBQBQQBBBBQQgZPQdqXqVujPIXqqSk\n"
+        "MEZgZXEZbVPZgMggZUVSDZPjPbgZqjERkdXVZRRgQPdMRKbLsXgPKqgEdPXSbPPqKSEDdPPKEdgMgbPDZEggPqPSdRZIEgRPPPMMgDPqPEBPPPgDMZgDMgQMgDgbXLvvYvUuXXSVIISkXIUJYvkPPPdKPdPIKqPKMviKBQRMQQQRQQBBBdKkVUXVVgUuSUSSKIIIXuIu\n"
+        "gMgQZDSPRDkXPERRJUEdIXqSPERgZSdMSMDbZgZEgDgRRgdPZPUIUDZgZEbPZdqqKgDMbPPggDggqbSkKdPdERDqdRbERQbSdgDgPPPgDbPPPggBMRMBQQMRggPIYsjUJukqSSIKXdPqSVUuuJjSuuUUVKujkXXEsijQQQMQQQRQMBQPVjjSIVVVPZuSXSVKbPSDdbPq\n"
+        "RggMggMEMRRKPPQqXMRbXZMEEEQMMZRgQMREdEgPgRRDQQDDBKVIbZDgQPZEbXPqgEPPdKKKbPRDPbRKDDZPEEgDRgMQQbPZRMMgMRQQgDMRQgRggZgPbbKIqSKqEKqUISVIkukISuUVSUUUkJJsUjkuuvujsYUjrkdRQMQRQQQMQBVLusujkVPKdXqPbPZbPKggDbPX\n"
+        "gDgQgMQBMQQQZZDQQQRZgRgMDDMgZQgQMRMZZRQQQQgRgMggPKKMQZZRZEPdKduqgQPqbPVIVDgDPMRggQggggEggQQQgddRRgZggRgRMggQQguuukUjUPqVsjkEbPXqKqSVuUuuLsYuJUUVukXqXjJUJjLuYJjsYgQBgMMQQQRQQEvvJuuVVbXXXPqDEDZgPZdqPZZd\n"
+        "QMMQQRQMBQQQQgQRQMRgQEDMQMQggMRgMgQDQgPKEgQMMERDZdQdEZREggPZRMDgRZZdgggPPDBPPRMMQgMERRDZQRQRMgQMggQgbXEMQRBRSvsJUIkkkKPPKIqbbXPbPqdqPqPSIUVUUukIIuVkUjkuujkuJsuuudBQQMQRQQQMBEqEPubEDqPPZbDgRZDZggEPgZDd\n"
+        "MgZQQRDgMQMQQQRgEMMQZggQMQMMgQMQEERgDZdgEZZggRMEPQMddgZZgDXZRQPVkbPPqEEZPPXDgMZggRgggggQQQgQEbMQEdddbMMgDgEqVPXkskIKXPqPPbPPPdPPXPPPPEdPPPVVkVjUjUJsLLvjsvvsvvvYvJDQMRMQRQMQQbdQDZEgZDdgdZggZDZDZDggDDdE\n");
+
+
+    Sleep (3000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+    {
+
+
+        char string[4000] ="Going through the thick forest you couldn't see anything in either of your sides. The ground was muddy and because of that it felt like you were walking for hours.\n Inside the forest you found a corpse which had a sword and some armor that you decided to use.\n As you were going out the forest you saw a patrolling squad and had to hide in the bush until they left. After they left you walked a bit more in front and finally saw the Undergrounds.\n It was a huge opening in a cave that felt like leading nowhere";
+        char * token = strtok(string, " ");
+        // loop through the string to extract all other tokens
+        while( token != NULL )
+        {
+            Sleep(300);
+            printf( " %s", token ); //printing each token
+            token = strtok(NULL, " ");
+        }
+    }
+    Sleep (3000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+    cave();
+
+
+
+
+}
+
+
+
+
+
+void hill()
+{
+    Sleep (3000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+    printf(
+        "QXKkIUIuuukSk rUUqbuuJusjYsYJYJLsYJYJYsLsLYYJsUr  i  iiiivsvvvvvvvvvLvvvvvYJYvvrvvrivvvvLvvvYvJvvYsYJvJjui  i  ivvJLssjYJsjsuJusuJjJusuJujuUSXZPv           i   i     ii ii iiii  iiiiiii ii iriirLLjLvi\n"
+        "ivPIkUYYLLLUr     rIvvvvvvrvvvrvrvrrrvrvrrrvrvL        iiuvririiiriririiii   iiiiiiiiriirriiiiiri iirriiiii  i irrrvrvrvvvvvvvvvvvvvvLvLvLvvvri                                     iiii iii  iiiirvvri \n"
+        "  vPUuXkUukuv      XKujssLsLJvYLYvYvLvLvLvLvJujii         ivsvvvvvYvvvvvvv  irvrvrvvvvvvvvvvvrrvLiirvviii rrrvuYYvLvYvYLsYsLsYuuusJsJjUvuSPJi          iiiriiii       ii   iii  iirirvvvYLvLYvvvvvvriiii\n"
+        "      rKqPSPsiiii    vuJvLvsvYvYvvvLvvvvvLvsYv             iYvvvvYrvvvvvvvrrrvrrrrrvrvrvvvrvrvrrrvrvvvvvriivvLLYvvvvvYLsLYvYLjVkuVuVLiYqvii                 iiiii  iiii    iii   iiiivvYvi   ivvvLvriiii\n"
+        "i    rriiivqq irr   irVssvLLLvLvvvvvvvvvvvvLYi          iiirUYsYuL   vvvvvvvvrrrvrvrvrrrvrvrvrvrrrrrvvvvvvLvi LvvvvvvvLrvvvvsLi  LXvkLii       i ii          iiii  ii         iiiiiiiiiii      iiiirrrvi\n"
+        "i     i            iVvvIuIuUYYvLvvvvvvvvvvvvYri  iii    iLi  vvvi   iYvvrrrrrvrrrrrrrrrvrrrvrrrrrrrvrvrvrvvi   svvvvvvvvvvvvsr                   rri      iiiii iiii         iiiiiiiii iri          vLLi\n"
+        "                         iiiJkUsYvvvvvvvvvvvLLJriiri    ii         iJvvrriiirrrrrrrrvrrrvrrrrrrrrrrrrrvrrrviii iLrvvvrvvvvvvJkr               iirvrrvi   i        i    ii    iiiiiiiiiiiriii  iiiiiivvvi\n"
+        "  ii                         iivuYvvvvvvvvvvvvrvriiii  i            irvvrrrrrrrrrvrrrrrrrrrvrrrrrrrrrrrvrrrriiiivrrvrvvrrvvsvJLi   irri    iiiirvvrrirriiri                   iiiiiiiiiiiiii  ii iiiiivi\n"
+        "i iiiirriiiiiiiiii              iJYvvvvvvvvvvvvrriiiriiiriii          vrrirrrrrrrrrrrrrrrrrrrrrrrrrrrrvrvrrriivvrrrrvrvirvr i isuvri iur      iirvriiiiiiivii     iiii         iiiiiiiiiiiiiri      rri \n"
+        "iiiiiiirrvriiiii  iiiiii i       ivirvrvvvvvvvvvvvrrirrirvviiii       rriiirrririrrrrvrrrrirrrrrrrrrrrrrrrrvvvrrrrrvrvrvrvi    vLUYvisKv     iiiirii iiiiii  iiiiii    iiiiiiiiiiiiriiiiiiirrvi iiiiiiiL\n"
+        "i iiiii i i i i    iriiiiii i     iirvvvvvvrvrvvvrvrrrrrrrviiriiii   iriiiiirrrrvvvvLvvvvrrrririrrrrrrrrrrrrrrrrrrvrrrrrrrrriiirvJi   ur     iiiiiiiirvri    ivvriiii iiiiiiiiiiiiiirrrirrrrrrrrriiiisSu\n"
+        "iirvvrii i        iiiriiiiii         rvsrirvrrrrrrrvrrrrrvrvvrivLYvvirrrrvvvrvviiY       svvrrrrrrrrrrrrrrrrrrrrrrrrrrrrrvvvrvrviri            iiiiiiiiii   ii iiiirviiriiii iiiiiiiiirrrrrrrvriiiijSkLL\n"
+        "i iiirvrrrriiiiiiiiiiiiiiii            ii  iLrrrrirrriiirrrrvvv  vrvLviii  ivvi           ivvvvvvvvvLvvrrrrirrrrrrrrrrrrrrrrrrvrii  r       i  iiiiiii ii         rvviiii iiiiiiiirrvrvrviiii   vSuUuuXd\n"
+        "     iiiiiiriirrrrirvrrrrvvvriii         iirvYvvrvrvvrrrrrrrvrri    ii i                       ivi   iirvvrvrrrrrrrrrrrrrrirrrrvr    i     iiiiiiiiiiii    i  iii  riii       irrviiiriiiiii   ivsYSXKqP\n"
+        "i   iiiiiiiiiiiirrvrvvvrrrvrvvLvr        ii  iLvvvvii iiiirv                                 i          iiiiririrrrirrririririrrri         iiii      ii    iiirii   iiiiiiiiiiiiiii i i i  irLuUPYISqXRg\n"
+        "iii iiii   iiiiiiiiiiiiiiiiiiiirrvri           rrv         ii                                iiri ivirrr  iiiiiriririririiiririrrrivvi                      iiiiiriiirrvvvrvrvrriiiiii iivsLYEDgPdkEgQZD\n"
+        "  i        iiiii                 iiiii                                     ii                  ir  iLrrri iiiiiiriiiriiiriiiiiiirirriii     i ii            iiiiririiiiiivvvvrrrriiiivKdDPIvYjIdbPPgQDZZ\n"
+        "                                     i       i      ii                     ii                       ivrriiiiiiiririririririiiiiiiriiirrvvrivvLYkjIVY   i ii    iirivvrii iirrrii iuVUVSVJJskuJuqVdDDZggg\n"
+        "  i i             iiiii  iiiii            i iirri iiiii ii                                            rirriiiiriiiriiiiiiiiiiiiiiirirrvi iLvvvvi  iiiiiiiiiirirrvJIkVIPSurii   iJVKQKsujIVIVukEbKVdZbSqS\n"
+        "   ii        i       ii  iiiiiii          iiiiiririi irvrvrvrri                       i                  iiiiiiiiiiriiiiiiiiiiiiiiiriii  ivviri      iiii  iiUkXIJvi iiii   iUKEEbIPukVPXSVSkEdDZgMDKbEg\n"
+        "     iii             iiiiii         ijJri     iiiiiii iirirrririi i                          irrrii         ii  iiiiiiiiiiiiiiiiiiiiiiiiiii         iii        ii         ivDQMdVuXSIkKkIIVUXdDgBBREDRBQ\n"
+        "Ivri iiii         ii         iYJvsvkXKIXPbKui      iiiirrrrvrvii iriii                   ivrrvrriri              i  iiiiiiiiiiiiiiiiiiiiii        ii i               ii  VZEPbqkuVVKXIjkkUjVXSKqqSVdDBBB\n"
+        "SYKPquriii    i           rvqEKkXIVqXuuJuuIVPKuri     iiiirrvrviiivi        i            iuYLvvrrrvr      iii       iii iiiiiiiiiiiiiiiiiiiiiiiiri        i  iii      rvkPPKqSKISjuuuVKjSSPPSUUjUUSkkSPV\n"
+        "ULYYvVKXusvri       iKKSuVPquYLUkIJIXkukVIujJUKEPdXrii   iiiiiiiiiiri      iii   ii       ijvvvvvvvLvii iiiii              iiiiiiiiiiiiiiiiiivrrriiii    iii i i     rXXIIXdEPEquuJuLPKkVSkuJUISVKVSVVVV\n"
+        "PuUsYvLsSSXIVuvirjPDRPSUUsYLsYuujuVIPVUJuJJssvvvJuVXDgr    iiiiiiiiii       iii iii         iiiiirvrvvvrvvi                iiiiiiiiiiiiiiiiiiiiiirvri   ii          SPVuUkSPbbPJkuZPKSKqXkkukkkukukIKqKu\n"
+        "qKKkJsrrruuXSbDQRMbPkUuUUSSPPXuusuYJqKkkuKIXSkYvvvsJvVEgXr  iiiiiiiiii  iii                   iiiiiiiirvrriiii              iiiiii iiiiiii    iiiiiiiiiirrrri    iskdqXbbMdbPIUPdQBBgKuuuVUkujkgZKVKXXSS\n"
+        "KVPSXSqSPPEZDPdqPPbKKXKPPVISKKXVqPdVXPPPdKKSVUIsvrvvjvJVdgPi   iiiiiii                   iiiiiiiiiiiiiiiiiiiiii                        i        iiiiiiriiiiiiiiiXDggqKPSPXuVDbRBBMqUjJJuVUVkVVZQBMZPqqPX\n"
+        "KVqbPEbEEZPPXKXPKKPdEgPdEbXPISIqIKVUsISUJussLsYusLvvrvvvvuqZvi   iiiiiii i     i     iiiivrrrriiiiiiiiiiiiiiii   ii                        i      iiiiiiiii  iXgBgEVEQPusYJkVQRquuuUukUggDDDEMRgDEEbPdqP\n"
+        "ZqDdEbdPbKqXPqPqqJvjUjssJLJUKkkkUYIuYYvvvvYsjuuJusJJjvrrvrJqdbXvi  iiiiii iii  irrrrririrrvrrrriiiririrrriiiiiiiiiiii     i   rIDqPqPksvii                irrgBZVjIkkJujUUIkVUUuIIXVPZdPddZZQgPSXPbqPqPS\n"
+        "EPbEPPPPPPXKVKXKkJvvvLrvrvLYskVSVJvLvvvYvsLsLuvvvjsYLuJYvvrsSSUEXui  iiii ii iirvYLLvvvvvvvvvvvvrvvvvvvviiiiiiiiiiiiii     iijuuuUuUuSXPPEKurii         irrJEDUvvLuZbXjusJuujJJkUkVPXKIIkXVPqKXEdbXqKKPK\n"
+        "EKdPPKPXPKKXPKPSUjvvuEZPVIXYvvsvLvrrvJLrvvvvJvvLLvvrvvYujsvivkIsuVKv    i  iiivvvvvvvvvvvvvvvvLvYvvvvvviiiiiiiiiiiiiiii ivVKKsvYuJuJjYJYvsIUXKPUui   rIjYUvsPuEEIJIdSJuukuUJJsIsIVVkVVSKdKVkkXPqbKKVqPgP\n"
+        "bPPbqbPdPqVPbEbXXdDbuIukuvvYvLvvrrrvvYvvrvvvvsLLLsvJYLvsvuUUvivUsJuKkvii     i iii    iiiiiiivrriiiiiiiirrrvvvrviri    vSIkXXPuVKPkqIUjsvvrvvsJVSkviivriLKXSqDEPIUsjsSUSuJsukdgDUkVSdQgDggEdPRDDPKqEEZZE\n"
+        "PSqSqXqqZEDZESPSqkUvvLJvLLYsJvvirvsLsYujXIIkUYsUXVuYLvLjkLvYuviivsSuKSkJsjjvrii   iiiiiiiirii  iiirrvvvvvriiiiiiiii  iUXSkkUkSXIqYjJuUSIuLsvvrvriirbgjuXPSPMMVUuUkZuVVSZbXgZZgRgbbQgQBBQBBBBBBBQRddPdPbS\n"
+        "PKKPKbPPPdVvrrLsvrrrvvYIvLJYrvvvvuYvvvvvvUJuUSIkYLYujjJLYusvuZSvirrvkgPkYsSEEZKLii  irvVSKXqUr   iiiiiii         i irSJVPPSSVPIuYLYvrLrvLvvvrviiiivBbqKPXPSKJuUIuVSdgEZQggMQgQQBBBBBBBBBBBBBBQPKSKVKSqqP\n"
+        "ZPZbbXXuvrvvrviivsvvuJuYvrrrvvjVJvLssLuVIuJLuYjYvvkusJssLvYvuIdbJirirvVEKYvruSXqbPquVVKVUukuIqPjvi                rSIYsvvjqKPbuvsLJrvrvrrvLiLi irrKXISKVXkuUVkIUIkUdBQRQBQBBBQBBQMgEZEdbPKPqXuukXSPPPPPK\n"
+        "PKXVVUvYvrvVUUvvvvLXuJvriirvLuuIJvvISPZXLJuuLrrrvYrrruvuuvvJSXSqKUvviriruPVvivuXuuIKSSkIUUJuLjkKXqVv            iVPkssvjIKSXXYiiirrrirrrriiiivdvvIgPXVUIUUVqISIIUkXEZDZQBBQMZZPPkkkVkVUVuujUuVIXVqKddZKI\n"
+        "SvJssYvvjVSKPVIuuvvrvrvvLYIuXdPPEdbuJjLvvvvrrrrvvvvirvLjsrrvYsUSqSXXviiiiiJVSvivkIIUUuuUSIujsvvYuuSPv         iUPYvvYjVqEdqvviiriiiiiiiii irkbBgPKPVIkVUUUIukIXkSSKSXVKXXkujusjsUUIkkuVuIUIkXXPqPPPKqVVJ\n"
+        "ujkuvvIEquvvvvissJsUJJLjJKuUYUuvirvsrirvrvvvrivYrvvvvvrsvvrriiirJvvsLriiiiiivqXYrYuVUuJvrjuIkuvrrLYUSv     irSkJiivSDRggPuriiriiriiYvriiruvqMgbqIIUVUVVkuIkVkVuVVXSXUIukuuuuukIXIVVVVKSKXdbbPZPKSSIKXqKK\n"
+        "uvjYVqKsriirJVkUXUjkXkLrririiiiiivuJJsJvrrYvvsIkKSsLUuvvvLjUVjujJrvLrrvriiriiivIqJvvukVuvrvvvvsviirvjkSvvLYuIrirUDMXkvLvriiiirvvksjriirJqbZqKVIuUuUUIVVuIkXIkISIVUUuUJuUIIPKPqdKKqqKqPPXPqPXKIXKPPbXqqPS\n"
+        "kSVIYiiiirvvYJsvriiriruXVVUsrvLUrrirvLurvSSDZgPjriirvIJLIbVUvuuusIusvrrvYvrrriiiiuSIvvvkuYriiiiriiiiiirjsvrrirrYjuiiiiiiiiivKJsIvviivKPbbPXXUujUUIISVKVXXSSqSqIIIVVqVSVKSKSKIVkkkSIXkVUkkXUSVVkkuSISIXVk\n"
+        "riivkuYrvLIUIujJJJLvYvYvvrvvrvsirvvrYrvrvrrYsLrrvuXYsUsivvIULrrirvvvvvuvvrvLvrvviiiYIVusJrvrriiiiiiiriiiiirrvrriiiiiiiiiiiiivriiivuXdbbIXkuJUuuuIUIkKXqqPKKSKSKqqXXVXSqSXVVUUUIukuUuUukVSIXXKKKSXSXVXKEP\n"
+        "vLJSUYsrvLLviiiivvLuJjsvJVvIILvuvuUSsviriYuuJJrrrLIUYJsYvsvYkVYsrvriirrriivvirrvvviiirvXXIvvviiiivLviiiiiririiiiiiiiiiiiirvLiiruXbPbPqVVUSSXXqSXkVIKSVVPSPKqSKVSVVjIukukuuuuukjUUVVSXbqKPqSPSqKqXPZgggEq\n"
+        "BgBBQZQqkIJvuskkYLviiiiiiiiiivvUPbPVUUSbMEqSksviiii iruYvrrrvvvYrivLriiiriiiiiiiiiiiiiiiirvYUvvsuriiiiiiiiiiiiiiiiiiirYUqXqIXEgQgPdqPqPKbPPqbqqXKIKSSUIISVSkSVSkVujvvrvvvrvvvUusvvssuJJvYvvvJLvvUsuJJvvr\n"
+        "gQBQZRDQQBBBQBBBgBQusPiUVUsUXUvriirYvYJVjvYkJLviiiriiiiiiiiiirLuUJLLriiiiiiiivvvvvrrrriiiiiiUgPKVLskvi iiiiirvrLUqPdEDEEqdbgddEEKXuSIXVKXSIXXqIXSVSXUIUVUuYujjsjvYLuJkVSSKSIuPkvjXkkuUuurvsrvujqPEPdPgDE\n"
+        "bVqbQQBQBQMQBBBMQQBBBBQQBBBBBXqDkuVvvLJvsvvvvriiivuYririrrriiiiiivviiiiiiiiirrririrrriiiiii  rsvJkISIJSSqKZdgEDEDddPPKPPdKqXXISSPPbPbPPKPKPXKUUXPKKKPXqKPIJVSkXXXKPqqVPXqPPIVIXkXKXIKKKqPqPXPPDddPPPPXPS\n"
+        "PKgZBBQBBBBRPRQQgBQdXgBBQgDggQggZZgQZMDEPZqqqsuPZERgiiUriiiiiiiiiiriiUrirLiiiiiiii iiiKKriiivvrvEgIMEZEEPdPPPqPqKqXqXXISPbXqXqSVUVkIkIkkUkuUJkujsUuuukJuuVkIkXIXVXkKIVkIkIISXqVKVKVVVXIXXKSIUkUVIIIVISXU\n"
+        "EIEkJYLLuvjviiriiriiiivvvriirrsvrrqgRQMKSPEEXdQRBqPZEUukquPUjPPKVEZsjXdKkPXkkvuXPuvvsdBBBMEBBRgMMdPXXKPKPKPPPPdqbqPXqqqIIjjJJjVuuuIkVkVkSkSUISSuUUIuUISuuuIkXUIUUuUYJuuJUIuuUJuuujUJjukukSqkPVXkSIPXPPPS\n"
+        "kvvivqVsJLsQKkKKPqSXXDXUjVbDPbMgdPqKgBQgbZggKqqkuVDRDqLDgZPskXJPvjZKuEMEIXgBQgEBBBgBQQDgZgDEXKKPXqqPqPPPKXkVIIkkkSuVkkUVkUsIkUjkuVVuJjYIsYsksJukuUukuIuujkUVkUUVVuuukjssYIJjskuJuujuUIUVIkSKXXVVKbPEEDEb\n"
+        "BBQPQgdPVbbSPMBZqKdPgDEPSDgXXEBQgPDKZDBgDDBMDDXKgQBQBMQDRMZPMRQgQbDRMZBQBMDgMZdPDPPPKUIjuJjsuJuYsusvvvjvYsJJusuuLsusJvuuuUjuuYvvjjuYLsuJUjJvsJjISUuYkJIsuukIVUSuVSkIqIKXSKqVPKVKdPZdPPddEPqdZPEbbdEdEZZP\n"
+        "QBBBZRMQZDEXdBBQPgMgQbSPPMMKEQQBBBQggRQBDRQBRBQQQBBBQQDQgRZRRDgMMDdDEEdPSSuJuujjvLvvvvvLvYLuvsYsJusuJuuSukUkUSukuJYjJjJuvvvLYujvLkLuJussvvvvYvvvvJvjSSIVKPKKkXXIXPqqddPdSIKkSXUKSPPqUXPEPPXQRRPdbdPDdbPP\n"
+        "QMQQQRBBBBBMbQBBBBBQBBRDgZgdgEMBBBDZEQBQBBBQBQBQBQRdPKXuISXkuuuUkLuJusvvYvjvvvJJVuUuSSKVSXqXKVPIVVIukVXISVqkuukXqjuuqZXSXXquVVXUuJUuLYIUuuJvJjIkIPPvvvrvJYYvYLkukSEqZZPbdqPXPSZEPZZKqqdIPKqIIIXIqSSkSqEX\n"
+        "gRQBRBQBBBQBMRQgZMQMEMgDMggRgDEgXbDXsjPgPXIkkUjJYIuuJYvYLsLYvvvvvsjuuYsUUXkXIVkVuSSPPEqSUSKPkSPPkkKXSuJsvSSssKkVIqIusujvYXVuXVUIvIYJqgIIuPSbPPPbVVIXUPSUXIvXXZSKSPbZKUsXUKgBRRbMdKuXKdEXKqbPqVPEEPVPqSSP\n"
+        "BBQDZgQdqPbPgbKXdPdKPSKkqSVkXIUYUjuuuuSVuuuIPuSVPXKXPKPKPXXKPqPVqKUISKZKISqSkkbIKVKIIkVVKVuUSvvsVSKSuLuXuusUKujuuUbkXVSuujjIPSuUZDggDEqPgQBMgMbVRRQQBQBgEdRQDPPjSVXUUvsIIVqKKkuuVkIPbVPXXVqVPIVJubKPUJKK\n"
+        "QPMBRdPMggDdqEqXSSUIkXIKKXXbdKVPVXPPqPbdSXIXIVSPXUuVXKVIJIuKuXXPEXSXSqsVVksUsuIbPgbXukKKVXkSXVkjJkuXIdbqdgXVPSXbVSXPkSXgBduVXMgQBBQBZEEPgQEKVdUJsuvvvUusYujYsujuYSVsIVIKSKuUsLuuUkkkkkVPIkIPKgSXSXdZgQDP\n"
+        "DPZgMPgDdIVIkUSbZPPVPdPPPPqIqIqKZEdPqkquSqPZMEZPIJvYSkjsDbPEEPPjIUPPbXKSgQRMgVIuJuSdVSZSPUVqXMMEESkqPSPVPPdSqPZPZZDJuKKSVYvruIIjkuJsJssvvvvvvvrsqXqIuJdbEYsIkLJIUuIIUuXVSSIjUVPKXXPbqSZKXXqkVXqqPUqkSKIu\n"
+        "kkSukXkPbZPEPZQMdZPDZXuVKILjsLLvLskIYLvYjksZXLJVVPSukXSqXVkqSPgQZgPZXVUjjkDZqgPPPPuuJJuqkPqVUsvsXEIYjUsjUPSXqVuJjLvrsUvsvvrvLvvYYvrvvXIbjuuUSUUIVPSbVUXPbduqIKIuJuYuJLLLvkJqPKkUsSuuJKJKSVIISIVbPPdZPbPd\n"
+        "ZSbkSSIIKujYSkJsIULJuukjJJIPPIjjsLJYdgKISsSujuPSVIPPXSXUvrvLLXUuPVjUILEBQXUsIXVuIJvsUsuJvvjvvvJuPgdKVVJvYsSquvvsvrLvruUqXuSEVjvvsUXkkkLrYvYKIJYUuvssuYusIvYUqSUsLvqSJkqKSUPjuuEVsYSjYYuujsPdVJkVVjkkJuSu\n"
+        "dPPIqdVVuPMVISUVuuUduVZbuISdPPKPuUJkUVsLvvLsJudVvvUVjSKVYjjJuuuJuXLsuJqEVjvuuIVPjbbZDdMEXJuPIPqPUXvsvvLSsLvvirrIuJvJUsuVjubKKgXkSMdPVsvvrrYvrvLLvvuLvuuvvvsuqMKSXXPXEQQBBBBBEZRIuUVqVVkUVKkuvjPKIUZZZdqV\n"
+        "qkRbVVVXgBBQZKbPkKEEIZgDdJqSKuukEPUYssbPZKPVUVBMusuIKVuubVXdKqujXuJUVuYvkYYISYUVPdEuUIrrvujvSVVJusJuVVUkLvqSbDZZbVJVRPKIPPgDgkJvuJsJuKPuSUVkEBBJuuvrIXqUbJjjrvJJuukuPUYIVsEVvirivvYvLqXIZdkvuuusukEdkVSv\n"
+        "PIqKSSkXSSUksuJVIVSkJUjSSJYsJVsSuUXdPkVZdRPSUqPbuSVuUKJjJSUkkSJKDKSZMqKgDRqUuJJYLUvYvrUgUSussKkMMEuuKSYJIMDgSLuSPVJusjPqkujkusuIqdPXbQZEPuPSvjvLuXrvjIYLrvsvYsJuiLvvrrvrivrrvjuXdSLYvLjZXSIdDBBBQKYYJVju\n"
+        "XuIXKuSVujKIIVqkuuqPDqIukUsYPgEgPukXqLvJYLSXVLuuUQMVjjYLIusYuYKVvvJIXYXIUKPjXUXVvrLMBERQbSqUvjYvriiiirivUrivisvvvUJvvruuqqRMbJKvsuYjSYsvvvvriisXPqXQMurYSPDMurvvvvvIXjIiYsuPQBBRBRQDMPUsLSVUbQEudEEbREPK\n"
+        "PSbIubKIKVJuLvYvjIuIssjJvuJIMgZQXZgKVEKYvuSESkVPMBBQPuSEPEgLuSXuYPJvrirsXkkIPKvuDgbRDPSKdMRPXKvrvqvjkjUuuSXqIbuvriiivvLuVSUkLuYvUvirYIMKjIvvLIIqMXqgBRgBEbqYvXgXIDQMggPEDZqKBBQBQBgqXIUdbKkjvJjkUPbBZJuj\n"
+        "gXuVXsLIREXEQgDgEsLYvsvvUvirvLULvLSSuvrrrriivrvvjPgMPjkjusuvIuLYjjUssYYvvrvLvvvvLVbSVkKPZZgKJYrvUuvvuvsvvvEgDXIYjUbPIuukvivkgZbbQdddgMQgqSSZPUvvKJVEgQQQRPurjZMuuUKPQQMQQERMQBBgbPIuSIPPZuYIkbqvvvukUVdR\n"
+        "PIKRPIqkYvJPRQdQDkuuPBRdkYIurjvivriivuvvkviviiivirYksIVIKdKDbkvsSXskKPkUvvJXujvJuYjkuJLLrLvsJKdYuJvvsLvukuvvuPdDQQRRBdIVLuDDuKbPjXbIvsjjvrvkIVSkvKXVUSSdVXZPkXqVXPkEqQdRDPVjvujuvLvkXPPPusUuLusSVXUYuXXK\n"
+        "bZMdQQkVXXUuSEdKqZRgBbsvKIqXUXuivkXsYsPPjvJrLIQKUiivvvkYPPXuqXSkKXsuuIUUkJISEguvYYvvvvssYvYvsuVPDRRgRVIEKvirrrYYIviiviivYLIvvqDUvYXLIXIYSVKLXjuDXudkqXKISkVPPZdqEdXPDPPPPIkuKUuUJuVqXKdKvruUIUPsuUPPuLUr\n"
+        "bPVJPKKDgQKbujkkVuvvrvujkPqVISvIDPKRuvPRuLvuvIBBgdPqrLIvrYYsvrsdSsvVggkJLJJjvZkvjVXksvXdRdkXuuuXSPIPXPEQKIVqquivirIukPbEUjkrLvLYuirvIQgQQBQRggDMPuUdXbkuSqudDKKPKPXPqKSPqPZQgBDEqPqZggdPJSVdBBgbEJjbjZdK\n"
+        "VqqujYIssuqKKsuIYvuuuYVvYuJYuSkSQMRQJIBqsVPDSvbPbdvvvruYVVSqBXLJvvvivkIEKkISviiiYvusddgMDgXKXVjjjLYJJYUKKkPDZsskIkMdMMQRPkuvSUXvsLqKrvSdSSjEMddEbIEbYvSSIuUXZPPPbbZSUXXIdPZdgQQEPKdDEZEZDgbbBQBMQbZEbMBB\n"
+        "bKdRbMQMESUquuvvjVsUvvrsvvisvYvqDQBBdBBSkdEjrrvvjuvXVkYuuurPBdYruPVviJrrvUUvLrYurviivgKXKkvsIdVIkuJuuUvJJssuuIdgMRBRZggDVJYPqkYrjdISkIvrirVIjuqkvqbuvkgbYSPqSqSIuSSuUPPUKPdRdgdMdddgPDEZPMDZZQRDZQgDdQRD\n"
+        "ZKDDBgQQQsrivvJLJPYLdJdEZqZZkVPQBBBQgQPVgRZuqXPXXkgQMQBkriruurSVkEbZguPIvYuvYIRgKZMSksUuSujjXUSVEKXVPUUkIvjYvjKIEbgZDqgEqPPbqEREgdDZDKVqSYXVjYZKIPKsKKEkKqquUsYvYkIvsuPbdDDDgPDZZbqPgDQEZdddgSEgMDDZMEDd\n"
+        "KkIsUvSuvsJPPgPdSjLJDgMQBgZEKbDZPQgPqKSXBBQEMBDbVdEBgqLjvUdSvuvUjsrPQDRQJvviVEMQEMQDDVUkuuJIXkkdXXKIqZZKXbKbUJvjuPEEbZEZUPXSJVPBPEEQEkgPjvkUjLjIJuukskKZDbbPkXVqkKSQdSuIUSXPXXqPPPKdXuqPPEPZqqdDZPZgPZME\n"
+        "qvjvuvkJVQBQMMVIDEDkRRPPgSdqIVkvIdSVLvuUuDKPMQgVSkdBBbubZMBbJuYivSuvkPdXSkUYgZPddPMSXkUuYJukUYuSqVVuSPdEDXPPEIVXkSqIkJkIUXkssukJYLPIvrIvYvLsdEivXXKujukLLSPIdXbZEIPKjvYvuvKUjvvjuuVqvYbKqdMKXbDbZPRdEPgd\n"
+        "VsIXkjsKQQDPQBXbUXgQQQgKUkVXuJuKuJLsPgMgkvXgggPPuVPPPZqqqDDZSPqJJKEIsVqXKPqXUdUKSVIIKXjjsusjIIUUjkLkukugZqKggdSdKkuUusvYIusvYkJjXYYkrvivVvUPsLrvjSjjvvivvvrivUVvYJrrirsEkuIUIvJgPMqKubgZgMEbEddgEZqEEKPP\n"
+        "gdEDZPuIVYJjqPgdDdgSdPXqXPbkqjjkksUdMPQDPsSIPVPKVqEkkvXEgDRDZQBSkUDZPKSVKbuuLsIkkJuvsbbYJsvvVKquUjVsvsvjukkbgREIIqKZgKXSKUsYsVvvJvvvvYPIUXZZYvUJjYYivvLXVUkJvrrvvLJXKVLVXZQMDkIPdgXSKKRdDdSEZZEbZKuubgPu\n"
+        "gZDRQXvqdEXIsbgQZqqPUkuggQMQDPUSSSPQPvVIJVJVkKXPPPXuvubRDMQgMBQgKdPPULLJujLsvvYujsJYvXuJYUvsIjvPSusvvuLvvsSDPXISIXIMPKddqXuXssVkruIsLSgDqZPPuVYsVPuYsLIPKbbdRdvbUKMBQBZXSQQBREudEdULvjPbqbkbPKkbgPVdKbPb\n"
+        "IudBMPqKPQRqPPbgDVXUqDbEqbQRgdKVKXPZDSrvSgdqdDPqqsjUXSPQDgBEgMBgbDdXPJJsULuISuujsuUuYrvsVKXVUvVYvruYuSKYsLPUuJKUqLVvrvXKUIuPEVDDKXZPqbZZgdgPDPVIDDDPKqdIKZDgBQPUsLEBgQBbIbgggEKkPdggDEgZbKPVPVkERZgDqKEE\n"
+        "EKPMKXbRPgDQBBQBQQdDPKVVuSqRgESVIKbggdIPsPVqKPXPIkSbEKbggggKgQRRXggPXuIUsXXIPXXPIVUPKLXPPqKguUXuvJSqdgZXPUsUsXKXEEKskuuPUsSdPdXKqDKVSPSEBQDRQgQggEEgbdPPqXkDDDMZSZYJDQQREPuqqbdqEQQDMQMZqPgXPKVgPDdZddbE\n"
+        "MqKIKSRgddDDEQMEQDMPKSIqqXUSSuuXbPdqPPZbXkSUVdMqPbMEZVMEQgMIERBbvYgPPVrvUKVKRIKuIVkVPKQZPbZgVYIjuKdPBgQQBPXujbSIkjuXPVjUIjbPXgIubqSXXXXZQQQMRbRPZDEZgPZXIVSkSPgdKKPuSPSPgqkXKSqPXdBujJDgZZDEQggZgPqgZdQd\n"
+        "SVPbZZPbPZdqJusuukuULJkVjkuIsuvuVukKXZggKXuUukUIUVPqjKjSPUukSVqXkPskIVUkLuSgbESqPIIVdqgZqZDRPqvvvuVPgqPRZduKuSJsvUJJJIvLjkVqZgXZEkJuJIKEDRbXdEVKPgZZQEDbusUVsjIkVuVVskjSuUVdrvrsvUSDPVSQgEXdqgdggZKEKEbb\n"       );
+
+
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+
+    {
+        char string[4000] ="As you walked up the hill 2 orcs noticed you and attacked you. Without hesitation you dodge the first attack and you turned around and hit one of the orcs and as he fell down you took his sword and slashed the other.\n You made sure to kill both of them and hid their corpses to make sure you weren't spotted. You stole the armor off one of the orcs and quickly walked forward.\n As you walked for a while you noticed a massive whole in a cave.\n 'This must be the place' you thought.";
+        // Extract the first token
+        char * token = strtok(string, " ");
+        // loop through the string to extract all other tokens
+        while( token != NULL )
+        {
+            Sleep(300);
+            printf( " %s", token ); //printing each token
+            token = strtok(NULL, " ");
+        }
+
+    }
+
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+
+    cave();
+
+}
+
+
+
+
+
+
+void cave()
+{
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+    printf(
+        "                                      irrvYJr                                                                                                                                                             \n"
+        "                                   iVPbPgEMQBDi                                                         rvvUQ   ivBY                                                                                      \n"
+        "                                  iSVuuJusjukKQBS                                                  iPuUIguvvLdq VIdBD                                                                                     \n"
+        "                                YkkUUuuukKPqdPDBBPr                                              iSvvYbgiiiJZEPYvMBX   iuvq                                                                               \n"
+        "                              iYkXPXIjSKddDEgZZPdbQBBKr   irrri                                  YDriirEEJJYkSqSUSZEP  vZVPBj                                                                             \n"
+        "                           ivVjvvUIPIqEZdDEdPPqKIqqPdQQQbQEqDQQBdL                            ruLLrXYkkPSEBQbXLSQRbZqPdZkbZB                                                                              \n"
+        "  iKPVYvi                 LgDIYvvUkukbPZdgZZPXUVXSuSVXXPbDIsvskKSdQBgKi                       iuiiiYgBBBgPJuXKPXrukSqIqMRQESMv                                                                            \n"
+        "VPQPVPDgBBBBZLi         EBMqUsLrYuIIuKdbgZdKqSXkSXIuuUIVbKuvvrvLuuSSPDBBRIi                   IsYvrvgIvXKPVuKSKKVXPPPkuvvUVudQBi                                                                          \n"
+        "RPVVkJSqXPbZDBBBSr    iBQPUUJjvrvUuVkPbEZdqPKPSKISkUjuuISPkjYIVSIVkSKSVEgBBBQRPkriii      rUJvivvsXVbjivuUXSPKqdjIIrZkivvvkSIEBB                      ivPBBBBQgs                                          \n"
+        "dIqSIvYjjYjsjJISDRBEvsBQbIkkkjvvuUVUVqEEDddbEbdXXUkUVUUUXqPqEEEPbPPVSqPVKqqqdbDZgggDgMQQBBBBQVvrivBBMEEVSjIPPIuKSUv bvivPDPPSERBPi     iirqEDEDIXQMZBBBBBQBBBBBBBMZK                                      \n"
+        "dSuksLvvrvLJJuJjukIPbbUPPPXKIkvLuuuVkPbEggdZbbXqVUkIkVkIVPPEVJvkSqKIuSqquXqdPbqqXPXXSSuujujIXDMDISbSXEgEPDbMddXMggPKEggZEREPIXqZgBgKXgQQgBBBdPbRMQZDQQQQZEddgMBBBBBQ                                      \n"
+        "ZukuYvvrvukukukuUukuUuSKdEdVXJivjJujIPddgZZPEKKKbXkIXXqVSVPKsrrLIkXVUkSKSUVXbPdbPXPKPPPSXIIYLYPbKDZuuYkXPXPggDRZDggMDggDRZgZSVkIVJuJuXZDBgDqPSKdgdPqgMgMZEDbgQu                                           \n"
+        "PVIJvsrvuUuujUUVuIIXXqqbPEPSVJvsJkUVSbPDgZZZPEbPPPSXSSVqSXXKusLvvukSkIIKSXSXXbPqDQKPXPPPXqqPSSSPvsIgEbkjivugggDDZMDgDMgggRgMZgSujVIdDRgEqPPZdPIjskIZdqudXMgQgBv                                           \n"
+        "qIuvYvLYUuUjUjkVIukSPPPqddqXIvuukSVUKPdZMDgggEDdEbZPbqqSPqPPqUkuuYjkXIXIqXKXPqZusqEbEqqKqKPKqKKVVuuISKDgQBBQQMQgRMgZgdgZggQMQQBQgXDZDKIVdSkVqPDZbIULLvuUvvYIgEBv                                          \n"
+        "KuvvrvYujuJuuuuSkuJkVPqPdPVPurvIuISISbbgDgbbPPqPPEdEbgdbPdbdPqSKXXjUKKSqVXVKPPdZvvvUPgdbqPKPPPqqKPSVkuJIZBQMdggRgRqDRQDgdgDKqgEBjvvvvuKDdbPdkuuVXEqPVUYLvriirVbBQU                                        \n"
+        "KvvrLjkuuuUJUuuUUJSSKKbdEXKIvivjkuVKqPEgQQBBBgdXVUVIIVPDgbbKqKXISVKkSKqKPPPSbPEggkUjsuPDDPPKPKPqPPPXKIIuukPEMDMgMMZPgdEPKgRXKVkgVVXqgggdPKKVbdPUskqJkuuuqPPPbEKdZsKBQkIYXZZsYi                            \n"
+        "svskuUuUjuJuuuvJIPPPqbbZPSkviirkukuSqbZBBQddQBQBDKuIkUjSdgEdqqXSUIIKkkIXSPPZEEPMRgKIJvrsPZdZPqSXVKSPPKXXSkYIgBRQQBBQQRgRDRMQQQMQQQBBBQgDKKPSJJuSKDIYLYvvvbEZEEPbQQDQBBQQBBQQBBRBK                         \n"
+        "svVUIjuuUJujuvLSdPqKPPZdKusvuLvLUIkuPdQB       PBBKuVIXjVPgEZbPVVuuuSIVkSSKXdDQdKEQDdKSJuIbdZdZbdPbPEKXSXVVJuSVsYUPSVKbdggZdPPbMqSPSKuIZggQgEVkJusjukKPZgDEKPSVXMgQggggDMggZggQBBBj                       \n"
+        "JYjUuUjUujjuLLkEPPqPbDbKUYvsukuuYuuqPgBb         BQUsukUIdbbqqVXUIuuJukSIVIKSKXIvSMDdggMbIJIXDQDqdPbqqPPKXKEkkVJvvvIVZgggRDuYVUMiiivvkPDbDgMQBRZbPJvvvvYubXqUVgBMggRDQQQMQgMDQZPEBBu                      \n"
+        "uLuuUuUUkuUJYubPPqEdZEKVJrYJUjkPIvIPZBBi         qBSsssskPEPPIjJujIjuUVISISVXVVUuPPUSSPPDdXuvYZgPqbqPqqXPZgDgPPdSJuvSBBgMgZbVPSRXYuIdZgPqIKXEgQQQQQZPkUKKjvvVEMDEdggPbRggEDDgDPkdZBQ                      \n"
+        "kuUkuUUkuUjJsqbbKbPZZdIsrsUkukuSdPXQBBK          iBgLJLsUKbgPquvvsuVJuukUSISVXVIuKPESIuUVbDgPIVSkZdPXqqZEDdgDgddMPuurXRMgQPdkIPQZMRBQMbPSbqkYJuXPZEgDgPEdDEZZMZRMQQRuPQgEZZgdggQRggB                      \n"
+        "IJIukUkuUuuYSPdqPPZZDILrYkkUIuUuqRBBJ             BBUvuvjKZZqVXujsuuuLYJVSPSSIVYkgbqqKdXUuSqDMBjirkqPdgMgEZEgZgMBdUsLruRQgQdXsqQRggDMgMgEDgqSUIuuJJvuuIUSPDgDbEdRgdIuuIDMZggbkUPQggBi                     \n"
+        "ujUkukuUuuYuKEqbbdEgPJvJkSUIukuqDBk               BBusLvjbEEVSusJIkIuusJYujUJjYLUEPbPbPDZbVuuKgEVSKKXPdgDgDgDMMQDKkVJYrjMRMQPIuXKQggDgDQBQZXuUuUjuYuIqkuuuuSqPPEMdXVqEVQgggQdSIbREgBi                     \n"
+        "IuIkVuUUVjsVEbbPZdDbXsvsIukuUjKZBB               rBduuuuPEDKSkVjYvjuXXKkIkkuUsujkqqSPEDPZgMEPkPPPdZddXKSdEgDgQEkIkUJdquvuMRgDqPKkDBEbgggPUUJuJuJuvXPPSUjUJjLJYVVKqbZDVZgQRgMMKIgRVDBJ                     \n"
+        "uJkIkIkVIuJqdbKPPEEKSJvUkkuUuUXgBr               gBsvLvuPgEKkIKgEZESvkqPKqVXIXVqSZdXUXqZPEDMMMPZbEdDPPPPXbZMRgVPIXqEDguurYBQgggMbXkKDgKSuVXKSqSXVKPVqXYIjuYkuJjJLjsuuuXbPggBQgubBQgBS                     \n"
+        "VuVkVUIkIkSKdPPPdEZXSvvUIuUjuUdgB                BRLJvvSdPPSXkXZQQBBIvuXSJjYsLkVPqbXPqSVdEZPdXddDdDggggbESbdZqPPDQRZgXuJJiPBQgMZRPbQdIXKPKqKPXqXSVKjqqsjUskVUjujujujUuuvLvJuXXVuDXVPK                     \n"
+        "VIVVIIkXXKuKqPqddZdSuusUUUUKKKqQQ                BXuJusPdbIIIKPPgQQBBPuXkuYsLuIbdqIVjVPEdDXuUZZDEDZbkQMPdqKbqKbPPXukIbqsLvkggBRQQBMgKPqqXqXqXSIqqKIsIPuJsjJIJuuUjujujUjUJuYuYJsjsusuILvvriiiii            \n"
+        "KkSVSSqKKkIVqKbbDdPSkLSUuJUJLvUbB               XMjYvvPQMIISqPPVgggRQIuuVIJvYkqbEKPPdVIUEgPJUDgEZPXuUgQqqEDPJYSXPqkkSuPjjvSgKdQZPgQKPPPKPqPXqXXkqXIYkKusJYJJjsuuIuUjkUujUuUuSkIuUukuIPbbZZZDRdMgQgDSuvri  \n"
+        "SISKXqKXSPPPPdbZEbKPjvvvvsJkjqdgBi             LBjvLiJMQPkkZZgbEDgPgXujuJusvvUqZqPKqPEPPIPPQQbEDbQggBZdbPggQuvkUKQRQgbPksvuMqkUkLjdZbdPPqdPdPPSSUSVUsKuJsjJuuuUUjUUSSSuUukkUUIuUjujuuSkVUVSXKSUIVEPdEgDZ  \n"
+        "SUXSKSqXPPZbEPEEdXbIvrJqbPdPPEMMBi            iQgkjvvbQgqkXdgZDgRDRDkuVUkkXuYkDgbKPqddEEZPqPREgdDDDqMPPKPPMQDvuqDDQRgbVvLrjDPVkuksXMRMQgggMgRDgZESPXVIbSVkIukSqVSISSPKSVKSKIVuuukUIuIkKKVuuuXSkjujuukuIu  \n"
+        "dPqqKqKPXqqZdEbDPPXJvudDbdPdbDDQBi           iBQvLvvXQQZkuXgMQMQQBBEvsYjukkIUEMBgEdZddPggRMDPPXSVKKPbPXPKbDQBVUZPSUXIUYuJjUDPKVkuUIQQBBBQBQBQQgQDEDgPdERRRZgZDEEbEPdEgZgDggRRgEEbbPPKKXSISkkjUVqSVXKkKXI  \n"
+        "BBBBBBBDqVqdDDMbPqkvUEEPEPdbDZMMBQu        rBBPvviivgRRVujqPbDQQQgdusjIUuvvrIZMbqVKKqPEIuvKEbKKVSSPqbKqKEdDgQPKIIUIkXPXYYvSEbSSkUuUL                                       iiirvYJSqZZgRRMQQQMgDRBBRRgME  \n"
+        "uvYsYYvgBDZggRgPqUvIdZbdPPbDDMDggQBBBgkviuBBEjvvrrvERQbujJvvvYjUvrrsjuYsrrvkPDqKXKVKVSKUrvsDdEKPqqPPqEPdDbDRZVuUUSKqXbRUvvdDqPSSIkUUX                                                        iiiirrvvYsj  \n"
+        "       iBQgdZDbSIrvXEPdqbdDZMggEZEQQBBBBBBgXIkVkkKZDQMXujvvvsLJsuuSkuvvvvruqZPKXqqdbEPEDgEPKVIPqPqPXPqdPDZdZgbgXVIqJuPRsvYMEqXKVVUkuZv                                                                    \n"
+        "       BBddddkIvsqEqPXbEgZMMRggDZbbqSVSSqqdPPXXqZZgZEjvVkLvrvvssJYjJLvrivUEPSVqKPKPPEbEdqusvLsIkqqPbPPbEgdRXIgBRRgEPQdJrXgdSSVVkIUVPd                                                                     \n"
+        "       uBDbdUuvsqZPPqbdggMMMgRMQggEEbdqPPKVXVXPggZPPKYijqKSIviiiirvkVKSVVbZPISSqSPPbPEgZXuLuJuuSVXSqqbbZgRMXPEgQQQggXJvvEMqPXXIUjjJID                                                                     \n"
+        "        BgEIYvvVDbdPbDgDMgMggDggMDMgMDDddPPPDgMgMDZPduvvPKKSKUkIXXqSSIKPDZgMgPPPdbEPbdRgDbEEZdbKqKbbDDgDgEKVqSqPZZguvvrsMEKXSkkuUjjsPr                                                                    \n"
+        "        gRUYvLIZPdPEZggMMRggDgZDZgZgDggggMDRggdEPEdbdXvvjPVqXKXPqdqqSSUuKgbVqddEPgDgZDgMZgZgDggRgMMQDdVjLqKVuuuKuukdksrPgdXSkkjuJuuIEi                                                                    \n"
+        "        iELvvIDddqEZgDRggDgDgbZEDZbPddZbZdZZgZDbbqbPdjvrvSPSqXKXXSXXqSkXDDSUZDMRREEZgZDdZdZEEdEdbbbPXuJLJKQqXSPqXIPgIvYggKPSKkkjujUuE                                                                     \n"
+        "         qJvYEbbPZDggRggZgZggZdEPbPdbEPZEZdggRggbEPbVJYsvLuKKqXqqPqqXVuMZdXZggDgPqXPqPPdqPSXSXSKVIuUjuLuVKgMPKKPPZBPLvSRbqqPvkIIUUkqE                                                                     \n"
+        "         vKJdEZEZZggRggZDEZZDbdqbPddgKkkqdgEqUusUuuLvvsjUIKPggQBBBBbPKbPEqqqPKqXPqPPbdgDgEZbqSSUkJIUSIVVqPEdgdEPggqYLLgDPXqgIIIkIUXMM                                                                     \n"
+        "          gDZZbdEgDgMRggZEbEPEPbqdPqVUuUuqqJrriiiirvJPEQBBBBQBQgVIDBQBBEqqSSISXPPdbDDgPbqKVSVVkkujYJvubdVKdggRggEVJJvSgEPPSQBZXPdBDr                                                                      \n"
+        "          QZbdEqdgMgQMQQQMgDMDZPbPkYJkXSPKYiiirrvJbQBBBBQXvi        sdBBBBBMRMQMRDgPVjuJuuUuIUIuVUuYLvYkSKbPZDDEVLjJSRMZEdgBBEZQQr                                                                        \n"
+        "          uBPEdZdMBBBBBBBBBBBBQBQQqSSPPbPbJrvBBBBBBgur                  ikgBQEKKVXIVVqXqSKKqXPXPqPqPSUvvPgKKEPSESVYXBBBBBBQBQDPr                                                                          \n"
+        "           SBBBBBQBEui      iivXRBBBBBRPgBBgQMIri                           iPSkSVKqZDgZgbbPbPPPdbZbEKIsuUUuusjjUUgL                                                                                      \n"
+        "             uXr                                                             iUsUKXXSKXPIkuVISSSXXkIJsvYYLvrrrrrrvkv                                                                                      \n"
+        "                                                                              irrvIVPqPSKUuJUUUsJvsvsvYLuuIukUXSjsUDi                                                                                     \n"
+        "                                                                              rvrrvvLLYjISPIIkkuUUUJusuuVUUJUSSkUsKV                                                                                      \n"
+        "                                                                                vrvvuuIIPdZbPVVUIUUYsYjJkkXISkYrrirrk                                                                                     \n"
+        "                                                                                vsJIkVUSVVuuuIkVVkuISKVPXqKKkkJujUJuVV                                                                                    \n"
+        "                                                                     irvYLYskukkYrririiiiirvuUVkuIIukKKkVUIjususUukkIgr                                                                                   \n"
+        "                                                             iivJSqEdEPPSKqqkkjjsYvssjuUjuUUkqSKKdPPSSusvYJkUkvvJkkksKM                                                                                   \n"
+        "                                                        rJXqPqqkSVVIXVXKqXKIIuIIVXqSKVIjuJkjVusLujuskIuJsuVIkJLvvYkkuJEi                                                                                  \n"
+        "                                                    iJKEqIUkjJLusYYjuSPZPXIkuIkksuJJLjsYYvrkkvrvvYLvvUkVuusJYJvvvvvvrvLu                                                                                  \n"
+        "                                                iuPPPSUjjssJJYsJjjSKdqPIusuuujIUJLYLussvVXvvYrvkXLsYukKVIjVkkjukULLvvvLIi                                                                                 \n"
+        "                                              iKMdSIkSUuuuYsjjJVXbqPkjvLYJsUYuJUuuvLvYvvvSXXXVkXXuJUukVKVIISVqIIukukJsjPP                                                                                 \n"
+        "                                            iXBZXkUuIUujkjjJukSVkvvrvrrrvvvrrvr irvvvvvrYEgKDgbjuuuuSVIXPKKVSIXXujkkVIPugI                                                                                \n");
+
+
+
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+
+
+
+    {
+        char string[4000] ="At the entrance of the Undergrounds, there was a guard armed with a sword and a shield. You sneaked behind hit and stabbed it with your sword.\n You quickly dragged it out the way and entered the cave. Inside the cave resided a small part of the orcish army, most of them were already wounded from the battle.\n You couldn't contain your rage anymore and started to strike them left and right raising an alarm inside the cave.\n Everyone that was left in the cave was in front of you. You slashed through your enemies like it was nothing.\n"
+                           "A laugh was heard in the background. And then suddenly a massive orc showed up.\n 'WHO ARE YOU?' you asked. 'General Derthag's left hand, ZARAUGUG THE BLOODTHRISTY. Now my question is who are you?' he replied.\n"
+                           "'I am First Lieutenant David, I came to take revenge for my fallen friends.' you said."
+                           "'HAHAH, very well David, I challenge you to a one on one, no swords, no armor.' said ZARAUGUG.\n"
+                           "'I accept your challenge' you said.\n Both of you unequipped your armor and weapons. The remaining orcs chanted ZARAUGUG's name.";
+        // Extract the first token
+        char * token = strtok(string, " ");
+        // loop through the string to extract all other tokens
+        while( token != NULL )
+        {
+            Sleep(300);
+            printf( " %s", token ); //printing each token
+            token = strtok(NULL, " ");
+        }
+
+    }
+
+
+
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+
+
+
+    printf(
+        "                                                                                                                iBQi                                                                                  \n"
+        "                                                                                                               gR                                                                                     \n"
+        "                                                                                                           JBBBBi                                                                                     \n"
+        "                                                                                                       i  BBBBBBB                                                                                     \n"
+        "                                                                                                   i  i  BBBBBZ                                                                                       \n"
+        "                                                                                                  i  i  BQVqBBB                                                                                       \n"
+        "                                                                                                  v  i BBRgBBB                                                                                        \n"
+        "                                                                                                 U  r vBBBBBB iQi                                                                                     \n"
+        "                                                                                                 L i  BBQBBR PQr  i                                                                                   \n"
+        "                                                                                                iii  UBBBBBdBBBLsQv                                                                                   \n"
+        "                                                                                                Lui  BBBBBQBQBQBu                                                                                     \n"
+        "                                                                                                gii JBBBBBBBBBi                                                                                       \n"
+        "                                                                                                L i BBBBQBBBE                                                                                         \n"
+        "                                                                                                v iPBBBQBBBi  Lr                                                                                      \n"
+        "                                                                                               rv iBBBBBBBZvXBvi                                                                                      \n"
+        "                                                                                               kL  gBBBQBBBBP                                                                                         \n"
+        "                                                                                              iuji KQBBBBBBS                                                                                          \n"
+        "                                                                                              uviI sBBBBBBBQrs                                                                                        \n"
+        "                                                                                              KXiV  BBBBBBZQBB                                                                                        \n"
+        "                                                                                            ivBv u VBBBgiUEuiRE         i                                                                             \n"
+        "                                                                                 i        ivvr  vJiBBgRQjBBBQBBBX     XBi                                                                             \n"
+        "                                                                                  ir     kkiii iMjrBBPQBBBBQMSQBBBv  BBs                                                                              \n"
+        "                                                                                  iiv  Yuri ii iMdiBQBBBBBBEBBBBBBBJBBBL                                                                              \n"
+        "                                                                                  LQ i Z   i   ivKvQBBBQBQi BBBBBBDBBBVBJ                                                                             \n"
+        "                                                                                  LBg gI         kigBBQBQBBQPvIBBBZBBB iB                                                                             \n"
+        "                                                                                  r biig   i      vQqQBRBBBBBqQBBRrRBQg B                                                                             \n"
+        "                                                                                    QB k     i    iSVBgBRSjBBBBBBBXRBBBvPv                                                                            \n"
+        "                                                                                   iBQr              rBBbBBbiQBBBBMQBBBBZv                                                                            \n"
+        "                                                                                 i vBBk      i       rQ MDi  vBBQBBBBBQBBi                                                                            \n"
+        "                                                                                  i B  B  Y   v    r MvLv uBPjBQBBbgB iBq                                                                             \n"
+        "                                                                                  s i iP  BBQkBE  PkkBBuVBQVgvIBBBv Q iQ                                                                              \n"
+        "                                                                                   iiiB  ivBQRBBBgZMBRBQBERJvgiiBQrjBgB                                                                               \n"
+        "                                                                                     iiX    vjBEPB    iMBQiii   SBgBQvi                                                                               \n"
+        "                                                                                       rr     B Kg   YXg rDBBP iBBQQQrqbi                                                                             \n"
+        "                                                                                        v  vbB ur riZBBEBr QBBQBBiBBBKvBBBgi                                                                          \n"
+        "                                                                                        v  EBK S LisBbriPQv KBBBviBBBRbBBBBBBBkii                                                                     \n"
+        "                                                                                         K  Yq   BUri iB BB  YBB YBBBBBgBBBBBBBBBQkYiiii                                                              \n"
+        "                                                                                         ki  s  rQBBBBBQviB  EBj BBQBBBBBBBgVBBBBBBBBQBBBbUjuPi                                                       \n"
+        "                                                                                          v  sjivEBBBBSSK vJuBB jBBBBBBBBBBB   PBBBBBBQYiuBBQBi                                                       \n"
+        "                                                                                          vB   iZ isUi  LSBBBBv BQBBBBBQBBBRBL   ikQBBBBs   MQBBr                                                     \n"
+        "                                                                                           vg   iDi    iI  BBB VBBQBBQ  i iBBBBBkii  ibBBBBSvQBBBBVi                                                  \n"
+        "                                                                                            iQ    BBBDBQBgSQB  BBBBBBMiIQDZBBvrPvigBBVrQBBBQBBBBgZBBBqr                                               \n"
+        "                                                                                            ivdi   rBBBBBBQBr VBBBBBBBBBBB   i i   iMBi      iIgBBBEBBVPSvi                                           \n"
+        "                                                                                           iv  irr iDQBQRvKskBBBBBBBBBBBQ iQBBBX                 PBYgRBBBBBBYuX                                       \n"
+        "                                                                                          iv        iBBBBbdJBBBBBBBBjrQBBBBv r        Qi  i       QBDvQrrBQBQBBBU                                     \n"
+        "                                                                                        ivi   i    v YBBBBBIBBBBBBBrrEBBBBBBQ        BK   i       vQBPB iBBBBBBQBQ                                    \n"
+        "                                                                                    iuri      S   iiB  BBBQgBBQBBBBBB      BZ       BR             BRBB  BBRQugBSBU                                   \n"
+        "                                                                                  sVL     iv vviYu  BB  BBiir rDLvJvkgi            sBi            iBKiB  uBQBZgQZuBqi                                 \n"
+        "                                                                                vDu      sS QBgLriv  bi ri            ii            dM            uMi r  iQBBQQBBuBdU                                 \n"
+        "                                                                               uri        igB          i                             Jr           vr      QBiiBBBRZBB                                 \n"
+        "                                                                              Pi         kk        i   s                   i          Ui      i    R      vB  vBBBgBBB                                \n"
+        "                                                                              B        vdi         i   i                               Pi          Zi j    Bu BQQQBQBQB                               \n"
+        "                                                                             YQ  iBi  i                i                    Bv          SJ          j iV   Bg BBRBQBBBQB                              \n"
+        "                                                                             B  KBBBX                  i                    YBi          Bi         i  Ii  LB BBBBBB  BBBi                            \n"
+        "                                                                             P rBBBBBi                vE                  ii  BP          i             d  iBiBBQBQBMiiBBBv                           \n"
+        "                                                                              PiBBQBBQ                gg                    VZJqIs                      ui iK BQQQQQBBMUBBBK                          \n"
+        "                                                                              ijUBRdBY                 i                       UBBQ            i        iQ  BsBBQQQBQBBBEQBBU                         \n"
+        "                                                                               iBBBqBY                 i                 iiiuPuSBQBBBuVi     vv  d       Bi PQBBBQQQQQQBBZMBBs                        \n"
+        "                                                                                 BBBBv              ri i                   bDuBBBBBBBBBBQBBBQBYBBBvi     dQ gDdBBBBRgBZDBBgRBBi                       \n"
+        "                                                                                 iQBBi              vv i                  ikBBBBBBBQBBBQBBBuZBBBBQBQi    BBQBbRBBQBBBQRDBQZiBBB                       \n"
+        "                                                                                 Li uE              iB i                vBBEuBZdQBQBBQBBBBBi    Yiii    vBBBBr QBBQBBBBQQBS BBQK                      \n"
+        "                                                                                 U   B              iv  r            iii      viVSbQBRBBBBBQ             iZRu   BBBQiBBBBBB XBBQ                      \n"
+        "                                                                                 u  iB              Z    r                   ii dBBBQBBBBBBBv  i                 BBBs kQBBB vBBB                      \n"
+        "                                                                                 v   Q              Mj UK              i  Yi   BBBBBBBBBBBBQB   i            uB  ibQB   BBi  EBB                      \n"
+        "                                                                                 ji id             ru  Lv  vY           iBQBiUQBBBBBBBBBBBBBBB  ri            RB    BB ivBB  uBBi                     \n"
+        "                                                                                 iq  Pdi                    rgZ          BBBBBBBBBBQBQBBBQBQBBB  ii            BBr  iBB gMBZ  QBj                     \n"
+        "                                                                                   U  BBBr     jBBQi   ZBi    vBi     rEBBBBBBBEMBBBBBBBQBQBBBBd  ii            BB    BBiBBBB  BB                     \n"
+        "                             iv                                                     BvBBBBBBBBBBBBBi  iQUBi     rSEQBBBBBBBBBBBBBBBBBQBBBBBQBBBQs    ii         iBbi   BBvBBBB iBr                    \n"
+        "                            ij iUi i                                              siiBBBBBBQiRBBU                  iUBBRujBBBBBBBQQBBBQBBBQBBBBBBV    ivi        BiBr   QBBBBBd LB                    \n"
+        "                            B   BBBgr                                           VV    BBBBBB           is                     vr   YBBBBBBBBBBBQBQBi    ii        UBBK   dBBgBBv Ui                   \n"
+        "                           Vi  Bi    SVi                                       Rv     siibBBU          rv i                          iBBBBIQQBBBBBBBU    iv   ii   BBBBq  BBQPKBBQQ                   \n"
+        "                           R  BU       vu                                     qj       iuQBBQ           v k         SBMDBIRBBgi   iuBQDvuqkvMBBBBBBBBQ    i   BB   bBBBBBi BBBi BBBB                  \n"
+        "                           v JR          gQ                                   v      vBBriBMKsgBBs      iIXi      MBBBBBBBQBQBBBBBBBBUjbq  QBQBBQQBBBBB       QBv  BBBviii igBQ  EBBB                 \n"
+        "                            PQi         LBBQV                                ir    iBMr   r ii qBBBBBvMjbQkgj ivrBBBgJQBBQBBIYuiivriYi   vBBBPBBEBBBBQBQX    rBBE  BBQ       iBB  JBBB                \n"
+        "                             Q         iMBr vdi                              iDi    i       M    iUi     uZ i  ii    BQPi               BBBBdqVgBBQQBBBBQBLvUBBBE  BB        vBBk  BgBBi              \n"
+        "                            k          DBK i  iir                            SB        ii i Bi           iB       PQdr              i uBBBRviivRBQgQBBBBB  rPBBBI  BR        BBBM EQrQBBv             \n"
+        "                           ri         iBBV  iiiirur                         iB    iv     i  igu                                 iEQBBBBBBBBBdkQBBRZBBgBBI      ki SBi      iBBBBP BD jBBi             \n"
+        "                           V           BBv ii   iivQX  iB     vi           rB   vRr     i   g Sr                           UqiigBBBBBBBRQVkIRBBBquQBBgBB       q  BB      gBBBBBu gB  BQ              \n"
+        "                          ui           gBv iiii    iQBkPBQ jVi  rki       QBi  ii         LBB  i           U           LirBBBBBBBIdBqi iJi SBBX  BBBBBBi      Qi uB      dQBBQYBJ BB  BB              \n"
+        "                         iq             BB  irriii    LXQBMUBBiui        ii   ki  ii   rBBBBU   i         DB  rbBBBBBBBQBQBBBBBBi        iRQQ   EBBBBQP       B  v      BBBBi  Bi BB KBZ              \n"
+        "                         U              BB     rvriiv   kBBrrBBBBBQVUv     iB    PQdqBBBu VgB     iiqBQBBBPiBBBBBBBBBBQdYi i ri         vBBi   UBBBZBB       iB        BBBg   BB  ZBBBBu              \n"
+        "                        r              iBQ       iriiriuBrrvQIiiLQBBBBBQBBBiivLBBDRZBBi   M QB        iQIiI                           QBBQ    iBBBvqBi       XU       BBBi   QB  uBBBQBi              \n"
+        "                       S               kEB             BMBPb   ii    IgBBvBBvBBq  Jv  iYbBS YPv          BB                         uBBBi     XBBivBg        Q   i   BBi    KBr vBBBBBB               \n"
+        "                      Jb               PJBj           QBRBB   ZU   vS  MPYErBBI iLiPBBBiBB   gi         iQM                      iBBBS       uBB rBBq        E  ir  BB     vBu YBBBBsBB               \n"
+        "                     i V               KRBE           QBBBQBBB    RP  ZBbbDBRi IBBQBBK kB    vB         SB                iLBBBBBBR         QBb  iQBk        v  L   Q     iBS KBBQgB iR               \n"
+        "                    i  d                BQB          BBZBBBBBBr  Bi  BBdBDiiYrvBBBg    BQ     id        r                QBBBBIKD          qB     rBu       irii   ri    iBMiBBBBDgBBMi               \n"
+        "                   vX iBi               QBQJ         BBBBBBBBBBBB    BgSsbPi    rZXi   BB      ik                      UBBBP             vir       Qb       iEii  ir    iBREBBBBBBBQvv                \n"
+        "                 uBBBiBQv  ri           rBBU         irvgQBBBBZBB   uBQQMvv ii    ivriiUE               rQBBB     ivBQBBBr              LJi        BB       rvi   L    iBRRBBBBBBBBu                  \n"
+        "                 iBMBBQBv vBr            BBZ              QBQBSgBBBBBBBBBBBuiiiiii  ii   iii            vBYIi        ii        B      ii           BB       Bu   v    iBdBBQQBBBQI                    \n"
+        "                  i jQVgRgM    Rd        vBB               iBBBBBQBQBBBBBQ vgi i iiLvvr     iiii                             vBQ                  UB        Bi  ii    BBBQBQBBjr                      \n"
+        "                     BQRBB  v  vBq        BBv                iRBBBBBBBBBg      iLi     iiiii   iirii                       rBBB                   BB       ii   v    BQBBBBBBBZ                       \n"
+        "                      QBBgiiB ii BU       vBB                         i           irvLr    iiii   iirii                   rBBB                   BBB           i    DBBBBQBBBQ                        \n"
+        "                       jBBPBgBQV  Bi       EBY                                        XBdi    iiii    iiii                 BBq              PBBBBIrB     ii    i    vBBBQBBBQ                         \n"
+        "                        EBBBPDBB  iBvv      QB                                 BBi XiivrBBBqi    iii  i  iii             LBBBi            QQBQBBBSPR     k          QBBBBQQg                          \n"
+        "                        PrKBQBBBdBQKQbDi    vBB                                Xi XBPs   EBBBBQv     i   iiiii  ii       LMQV           EBBBQBDQgRBBr   Z          iBBQBBBs                           \n"
+        "                        uuiBP vdBMqYBBBBDQ   PBBi                               bMB       iDBZBBBQXi        iiiii iiii   iBgr     iivqBBBQBrsbiMIDQBB   u          BBBBBBB                            \n"
+        "                         PrB    KP  LBBBBgu   UBqi                             YBB          iBKiIBBBBVi         iri  iiiiBBBBBBBBBBBBBBBB ki BZZQQQBB  v  ii     iQBBBBBR                             \n"
+        "                          BQ     iv qRBBBQBB   kM                              iBIvi          ZBi vBBBBKrirriiiii iiii     iiiBBBQQQQDgdD uBrDMgDQviB iu  u     JQBBBBQK                              \n"
+        "                          iB      ivj  vBBQBs B gv                                             iBB   vBBBSiiiXSvi    irv     iuMdBQMBBgEMBZBBBBBrSB   J   k    QBBBBBBv                               \n"
+        "                           B        B   vEBBBBBbLBi                    QBBBQBQuZYrvvui      i    JBj   ikBBPJirvbXi       ii     iv iBBBBBQiRBBQ  V       P  gBBBBBRMR                                \n"
+        "                           ri       vg      sQQBiBBv                  BEqBBBBBg            iBB     RB     vIviirSBBBqi       iii     iQYvBi Bi               uv rBBPY                                 \n"
+        "                           iP        u         ruQBBi                 BiYBsi                 vBP    LBJ    iL  ri PBBBBgui      iri      Rg                     bBBB                                  \n"
+        "                            Li       r             rv                 iIYB   iKQi        ii    IQj   iBgi   PBgBBi  dBBBBBDKVi     iii   uK             vU  vBBBBBB                                   \n"
+        "                                                     i                   Eijv          iJQBBBXiiPBB     ji   rBBBV i  BQBBBQBBBbji      BS            iUi rBb iDQBb                                   \n"
+        "                                                                     iJ  jQB                iQBBBBBB           idQ i i bBBBBBBBBdSkXvivQ            igI  BQ     BBiv                                  \n"
+        "                           D                                         V                 r       KBBBBB        Xv iBi  BbZBBBBBBBBBQkXBBi            SQi  QB      BQK                                   \n"
+        "                                                                     jBR    ji                iuBBBBBB        r qBi   iiBBBBBBBBBBBBQBi  i         i   iB     RBBQB                                   \n"
+        "                                                                     LBi    Z                vBQBBBBBBP       DQBBi  i   BBBBBBBBQBBBBBBBBg      Li    Li rBBBBBBD                                    \n"
+        "                                                                                           dBvBBBBBBBBBi     juBBBi  BJ   BBQBQBBBQBBBBBBBB   irv      r  BBQBBBKQKi                                  \n"
+        "                                                                                        i   BBuQBBBBBBBB     i sBQi iQBJ   BBBBQBBBBBBBBBQBBBQBBB       XrBBBBBRjkUkPY                                \n"
+        "                                                                                        vBBSLBRgBBBBBBBBQ      BQr   qBBu   BBQBQBBBBBBBBgQBBiEBBdZBB  JBBBBQQIXvKi iQgkv                             \n"
+        "                                                                                          vBk BBBBBBBQBBBs   iBQB     QBBY   BBBBBBBBBBRBBBBBQBQBEvBBb QBQBBY iPBvvQYvvvBBZi                          \n"
+        "                                                                                            MRvEBBQBQBBBBB  iBBB    iQQBQBv  vBBBBBBBBBu  ivqQBBBR   BBBBZisKBMi  vVUBS rkBBi                         \n"
+        "                                                            Sj                               rBuKBBBBQBBBBg vBBg    rBBBgQBVi  KBBBBBBBBP     ivYBBB          IBQi UXbJRdqBBr                         \n"
+        "                                                            BBB                                gQQBBBBgBBBBv bQB   BQQBBgZQBBB   kBBQBBBBqi  i   vdBg           QBg  gRgQQBDQR                        \n"
+        "                                                    VBBvii    q                                 QBBQBBPPBBBB iBB  BBBQBBBgkQBBBs   vBBBBBBBQdri                  iBBXQBQQQPkb                         \n"
+        "                                                     sBBLBBBs                          XQMi    uj BBBBQkQBBBBEY  BBBBBQBBgRrBBBBQBg  iQBBBBBBBBBguii i             LBBQQBBBd                          \n"
+        "                                                       BB  iBq                           iQEPr  B  BBQBPPBBBBQkJBBBQBQQDBMQEiBBBBBBQQiZBBBBQBBBBBBBBBQBQ             vEPqv                            \n"
+        "                                                        YBP                          iDEi gsiJbvvK KBBQBrBQBBq BQBBBQQBgRBDBYiBBBBBBBBBBBBBBB rBBBBBEBBBi                                             \n"
+        "                                                          bbB                    iJi  LBBBBBBqvuBBP BBBQi BBBR iBBBBBQBBQBBdB vBBQBBBBBMBQBBB  BBQBBi i                                               \n"
+        "                                                           BB                    BBBBBBBBBBBBBBBudB BBBBQ rBBBv BBBBBBBBBBQB   BBBBBBBQ ZBQBBBBBQBBBB                                                 \n"
+        "                                                           k                        ijgQgJrvBBBQP B uBBBBB  XBB  BQEsBisBBBBD  BBQBBBBBggQ  rQBQBBBBB                                                 \n"
+        "                                                                                        iKZUi iBBBBSiBBBBBX  PB  DQVXQ  QBBBQY BBBBBBBBBBBBXi                                                         \n"
+        "                                                                                           idgr kBBBiRBQBBB      MBBBdQgQBBBBBr BBBBBBBQBBBQBIiii                                                     \n"
+        "                                                                                              uQqBiDqEBBBBBg     QBBBBBBBBBBBBg QBBBBBQBBBBBIBBBBBQE                                                  \n"
+        "                                                                                             vXXvZurBBBBBQv      QBBBQBBBBBBBQB iBBBBBBBBQBBi   rqBBi                                                 \n"
+        "                                                                                                  iBgjQBQB       BBSPBBBBBQEBBBBiBQBBBBBBBBBBBBqr                                                     \n"
+        "                                                                                                  IQv BBBBB      QBigBBBBBB VBBBDdBbBBBBBBBBBQBBBBi                                                   \n"
+        "                                                                                                 iBv  rBBBBY     QBQBBBBBrQ iBBBQqBP JBBBBBBBQ  BBQ                                                   \n"
+        "                                                                                                 BR      BBB     gBBBBBBK B BMBQBBBB   BBBBr     sBI                                                  \n"
+        "                                                                                                BB       vBBI     jBQBBB gBrBBUBBBQBL   BBBi      iBi                                                 \n"
+        "                                                                                               RB         BQB      BBBBviBBBBQZBBBBBB    i                                                            \n"
+        "                                                                                              RB          iBBg    BBBBQ BJJBBBBBQBBBB                                                                 \n"
+        "                                                                                              Q            BBB    BQqBvvB BBBBBBg  i                                                                  \n"
+        "                                                                                                            bU   vQJ BBB XBBBQQDQk                                                                    \n"
+        "                                                                                                                      BBVBBBUYBYBR                                                                    \n"
+        "                                                                                                                      QBQBQBPBBBi                                                                     \n"
+        "                                                                                                                      iLYQRXBBBi                                                                      \n"
+        "                                                                                                                            BBi                                                                       \n"
+    );
+
+
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+    printf(
+        "                                                                                                  i                                                                                                     \n"
+        "                                                                                                 iBi                                                                                                    \n"
+        "                                                                                                  Pgi                                                                                                   \n"
+        "                                                                                                   BEJi iii                                                                                             \n"
+        "                                                                       rdjrr                       SBBBQgBQgsrv                                                                                         \n"
+        "                                                                     qBBBBBQBr                       vBQBBREgJVr                                                                                        \n"
+        "                      i                                             iBBBDVvsBPi                        EBgBBBgdBBBBBi                                                                                   \n"
+        "                     vEgsivi                                        BBBki   iBBi                       kYVZkPqqQgksLr                                                           irii                    \n"
+        "                   iZbSEQBBQi                                      SBBPvXbLVUuB                      iuRgPILvIBVvi                                                             kUgQBd                   \n"
+        "                   iBDjvrrvqB                                      BBBUrXqiLIiU                irYuEEbUQgSZRZMBQMRIvi                                                         iBBDdMRvi                 \n"
+        "                    DPvPdvvPBZ                                     BBBEUrsurrI               vs iBQPZPuDQBBBBRQMZgDgKkXI                                                     iBMgMkdBMUk                \n"
+        "                    ugPjPkrujSY                                   BBQQBQXXgZBBi            vgEVYrPMSUKgdMQBggdDuSqMXjPBdSJ                                                  vqPdPkSuKVgDi               \n"
+        "                    UPZqSErrriJ                                  BBIUBZMZXKIjRVii       iIBBDDgPXIssvjPgEMdqKXXjYrPEXgMRRBU                                            iivsKPgYQQPQgXvUB                \n"
+        "                i YgBQDgDKVBgUYui                            iiirUQgRQRdgdMviMbDBMU    iBBBgdMBJKPUvJJUSUudSVVPjksVKdgggQgjj                                     VYSPVPJiiLuDBIDQQBRqDBBiiii            \n"
+        "             dRMqqdQBQZQQQBBEQQBBqus                       ksuggqVDqXERBRPgQBMDDSdBBMkvIZBZXkDQSqDPdZRqIbRMqkIIjIZsqQQQRRBqkv                                   UdvsPiiiivi   kgMQZgi iiir  vv          \n"
+        "             BBXJLvLMRPPMEQEJEMbQBBBMJ                     RuJqbgdduuZgDQQBBgEEIqqUuPBBPsDbsvrdPqqdDQQRPRDEKZSXKSIsPBbqbggMSKY                                iBVVguuuVgYiYri uPgSIdririirDSXPIi        \n"
+        "            iBqIIqSXPgKkPEgPBDZDVQQMRIP                    QEMUjjqEPkDbDgQQQDgEEuuvUZQRD  uVvvkQSkEQRRMBRRgMZgdKIUuMQPIXPMRBBJ                               igVDqVqJdBBUdPXSgMEbMgRbkjVsvuPVIgPi       \n"
+        "            UMSIuvDBPvZQEgqJgMEgRQQBgPgr                  PvPRVgdUPPZgZdgQRggZPvvjPdMRBQQriukKgBDKMgZPDgEZMDRgMqPqEBBdgdDdRQBK                               USijSdMgMRquEDEZDBgBBQdgdPPPvsEDqRQI       \n"
+        "            BEUJvuRBEvLQBErXVRguqDBQdKis                 YUjgBQMQBRgEDgMbQRZdEXIdQRQBQgBBBguZBDQBBMMgdqZPDPbdMgQQMQBBBBBRBBQqji                              QRDBQMQZgEuKjqQBBBdQBdQQQEPUv QBQQBZ       \n"
+        "           SBVSPVVPbUiriqIvvvkEUKqQggRurv                DdRQQBgMgQQBRgddgQZdQBQQMQQBRggMRQZqEUYBMMgggDEgDbPZdDgggBQRdgZBgKUSKX                              iVVJdDQQMQPPqKggXqIRZLjdRQPPviDgEBQs       \n"
+        "          iBPKVVkPPVgRSrvbuZuvKEZEPBBBu v               iBQQDQQBQgsqQBRMZMMQRQPPPZQBQgEMMQQBRdKKQBBBDQBggQDQRQMggQQDEEqZEqkUPdqr                             KIgdDDqVZDBgdJrirddbPjSJUKgRRQQqXgBbi      \n"
+        "           gMZMEZEgVgQbKZgZPQEBQRIVUvrkPki              rBBQQQBDZRgSPRBQQgQQPJIqZRBMBQRRBjVPPSbPggREMMgEgRMPdRQQQQQZdZQRMdVIEPMi                             Qi uMERMDBBgJKsvEPYkSLvLkPPSQBZdqPDBD      \n"
+        "            BBBBBBBdRBQMBBQBQBBdSbvrvdQBDi              iQMQQBBZEMBBEPZBDRMDXZgZdMQYVBBQQvigDZSMQgJLgBMRgBdXDDdbdDgQKPRQgdrYvPB                              LRVIUJSMBQYbEbPVISPqgdXuqSPgQMQbgggPg      \n"
+        "            irJVDQBBBMQBBQQQBBPqEZBEBMY                 iBBQBBDqbPZqdPMMMMRZggZZQDBriBBBBPvRQMZgBQQQBMgZggQQBRgRQQBquPQIkvLurdD                              UBXPPKvgQMSrXBMPKdEgEgQbKXjqXSgBRBKJSK     \n"
+        "                   BBgMBBBP vKUbZSXBv                   IBQBBESBQZZEddPZDQPRDddMQBB  BBRdgvkMQDQBQDMRRgMggRggBQQZMqMdPsrvviuJBi                              SZsrgQgRBBgggDgKqbgqdDdUquUVQMZDMMdDBQ     \n"
+        "                    RgPqSri juivK  Pi                   gERQBggbkMBBBBBQQBdXgqQQBQB  BBduvYPRQMgQgQgZdRQBQggQRQgIujRBuIDUviiKB                               dBrvUIKkDQgQSSDDdMMDgQuukSdQRMbgDDqPDB     \n"
+        "                   IBQZEqbdPZZISQgkPL                  iZMBBRuQXsqXRQBBQEQBRPdQBgii  BBdvvvQgMgQMRRZVZMDjIbQMBDMZgPvkIDBYuSPEi                               rBEDqVqsXbqPuXBMQQBRDXiUgXrgQgMZgZSvSB     \n"
+        "                 LBBBQQRBBQgREQBBEIsi                  rdgBBiuBjkJUJVuuYujZMEEPSgk   VBUriKBMDQQRQQQZgBMkPQQBRDgQMr vXQSSkuBv                                 QggVIkkSgDQLKDdZZbgbBsYKIrgPZQQEgJrrgi    \n"
+        "                 BBQQBMQQRDMBMBdVXrri                  qdMQD BEIqMZEdXVVjVXEdDjUVu   uMuvrZBEMRBZXqQMRQQQMQBgdXdEVSXiqgMBBQr                                  MBBBbZMQdMQgPBRQggEMQQgZbMMQEggbUiiiZY    \n"
+        "                iBQQQQbbQgZdQQgqPMBDR                 vQgBB  BbLUbMQBRQZPggZMggBEg   QBUvigMBdMQsvXgQMggQQBBEJjkXJDBurBQbSi                                   sBBQDgQMduVZQRBQQQQMQZQMQbbbBgskKUvrIi    \n"
+        "                iBPbggSqERbbdQQDDZgZb                iQgQBg LBKvrLsjPBgMQBRIIQBBBQ   BBRPqBBZqggsISZMQgMgbgBBbPZPIqQRrP                                        QMZRQQQRBQdMMZgQQQQMQSEZZdKgBvPuurKB     \n"
+        "                iBKuIqqbIuPgbZggQbMEB                iVvbEZ QBurrrvvXBRZQggXPDQRBS  sgvvSgBQZbggSJUPggQQBdDBBMPXdJJUkXZ                                        sBMLKqbZqRQMDgIVqbKdgqPgdZSgBXXKSbBZ     \n"
+        "                iBqVJqbdKLJbXKSSDZujQi               iXuiQd QSvrvvuXZBQQggggZgMMQBuSEMvrrPQQEgZPJkPgDMRMqMPkgBEPSVuKEgs                                        vBr JBBKvuLqRZDbgSIbMEggEIdZBQBQBSi      \n"
+        "                iBKSuIKqPuuXVXPUgbkigi               kBvvJQdQViivXbKPRBQRZgQBMRDQBBBXgkqkgRdKbquIEgdDMMIPDvigRPqZgBgDKS                                         BdDQQuuudUDRRMMgQEZMgRMdUSgIvEBg        \n"
+        "                iBKKUuLIIukbZDYKBbUiZQ               ii SiiBqkiiUEqkVggQMgEQQQMQRBBBBbKbdBQgXbXSSbbPbPVEZBVvPQZgkuuvrjI                                         SBMZkssgQZgQRRgPbbgQgBEPkSKUvbBB        \n"
+        "                rBbPurqqKJJqPPVdBbI SB                J ZBrQUsuLPdKJDZdbQDgQQMQMQRBBQgBBQgQMgPEZQQgdgXgQBQRkkuZgEqSvirr                                         iBMEDPgQEbRQQgQgMPMQRMDPKSqUUEJRE       \n"
+        "                vBEdSXPQdKXEuvUSQRgSvBi               riBi BuuJuPbkPRbXbQggBRQRQQRQBQQQBQQgQQMQQgQBBBBQBQQQQERMZbESuLUb                                          BBBQgggPggQRgdgRQMQQQDRSjEYur          \n"
+        "                vBPdZPDQRVZrvsgqQQRdiBi                Bb vBJPJYPPKDREPdBZRQQgQRQgBQQQQMQQBMddQZgMQgQdSEBQQQQBBQRMRQBBBr                                         BIDEuqEdMQQgEggMgMgRRRMEXZjsv          \n"
+        "                JBSPXDDQQIkIsjMPdZMPrRi               qB  QQJdvkPqKPKDKZBgRQQQMQggBBQBQQRQRBRRDggQXPgDVEQQQBQBRQBBQQMQBV                                         BgMgRMgqkSRgQRRDgZMZMMgEDPUvVr         \n"
+        "                KQEqPZgRQPUqPJDbPSgKvdr               gB  BkSUYSKKdPdbVdBZQQQQRQggBQBQQQQgQQQQMdZgMQBgPZBQQgbMgEBQQRQQBR                                        iBMDMgQRQZgZMgggRZgggggPRMdqSLD         \n"
+        "                MRPPbPZQZRQKSRMgZgEqSXP               PB  BgZZEZPDZZPbsgREQQQQMREDPuRZDQgRQQdQgMgQZgZgqPQQMPJbUXMBMgdDMB                                        iBgDgdPDgBMEDZgRggERgQZEgMdEPdZ         \n"
+        "                BBDdgKEgDgQIDQQgRZQZQgBu              BB  SBBBBgZbZdbdsPggQggDZEMXsvQQQQQMQbSEQRRRMgZKqdRQQBBgMPbgQDqqgQ                                        YBBgggEDQSudQDgPXdZdgggRMZgEggQ         \n"
+        "                BBgQQRgRggZuDMEggRgRggQB              QQ     iPBQZPZdDUPDgZDDgRBBDujBQggPPQRDMEZbEgBgDPQQBQBRKIsqRMQgQMBr                                       BBMQQggBRddgDQPqPdEQRQgMgEEgdgB         \n"
+        "               iBQRQQZgZgggVQRQMRZggDXRQ              PP        BdgEddPgDDMQBQQQQkksQQQRMDQRQgMMMEEdDDRRQgQMRgMEMRQQQRQBu                                       BggDQVqQRgQMQMQgbZRgQRQgQZRDKQb         \n"
+        "               QBZSDggRMRQRMQQQQDggdurUBKiSL          Zu        BMRBQDPggBQQgPXbEVVDDgDgDMDDdZEEZQQZgQZRgQRQQBQQQQRQgDPBr                                      iBMESPRRQPZZggRRgPgQQgRMRDgQRqBi         \n"
+        "               BZugbJSRgMgMDDEgZPEgPEVYrJBBP          Bi        BQRQQQQgBBBBqSPKZdkkqPPKqKPdQggDMkgMgEdbPXbqdbZEbXZbEZDQv                                      BBMQEEDDVYkKXqSPPdEddZbZZbQQBRQK         \n"
+        "               BQPgMqIqbPPXKqPqPKMXRQgZDDPdd          B         BQZRDggBQQQBMBQESQXUSPXKVVJUJUXMPPSBgPIYsIuJjYskUPdZPdPBv                                     iBZPPPSPEdVPPPXqPPXSkUukIMDQZZZQBj        \n"
+        "               QBQRRBZSIISKSKVSkPgBRQBBMKIIQi        iB         BQMggZggBQQQZbQKqDMXKXdPQRQgEEgBZPQQBMDPgQBZgdDdPMIIIsYks                                     BBMDREdDBBEKPqPKqIqIKqXIEBBPSJPukPi       \n"
+        "              iBBBMRZEPPdEPdEEKZDQBQQBBBQRQBBBggVdDuiRR         BBgREZZDQBQgLuskdZKqVPdEMQgQMQgZdggddDZggQMQMQRQQBQBQBQQQBZKYviivriiiiiiiriiiiiiivvvrrvLLJsVIZQQgRRQQBgPXdPZqZZbqPqEDDggQBBQRQRQBgdPuusv\n"
+        "              rgXqggQQRbdPPDDZggZdPKZPEdEEKqXPdDgEZDgEq         BQgZZPMggRBSXSSVPdPddbduvvuVPKIKqIXIXqqIXSVXSSKVKqdEEdZEZPERQQgLjuuuPEBQKdQgRMBDdZZKgQBQQDBQBPqqPqPKXqXVKPddPqbKdPDqddbqKdPKbbZDgQBBBBBQ\n"
+        "              ii iivdPXXXqKKYkVkXIYkuuvjJuYVujISIIXIXPU         QBggbDRQQBdIXdPdqdKKVYrivXZgVIEZPqVKqdSPKPqPqKUussYJJjuUJkqgMQQgqEgggQMDPPKEqVIVIVukXRZEKPZEPKPbPdKKSqPDPPXPZDbdZdPqqgggKXIVVKkksIIPSXPd\n"
+        "LJqPZQBBQssvLYsJJvqDDgSkUjsuSUSuuUUuVqUIXIXkUJSuUJuJqPu         QBVdgQQbBQXSkSqPXuqqEEEbBRgKqqXSPqgPqPSjjuJuuJuujuVjUjUIXXjsUJXSSJUqbSIXUJIkUuUYjuIVKsjuYJIUSkXSbEPEbKqbVSSISkuPKUkkZXXkuYjUuuIkVsujjsXI\n"
+        "MdQDXXKbPQQgPdggXqKXKUYUjSuIkkjuusVuYkusYUJJusYJuksYsXv         gBDSqPKEBQLuLsvvJJvvsuusuUvsYjvUuYvvLJsvLuYuUVIuYIvvvLkUYjsjvvvLvLvIuJssvIuuUIJIuSUkjJuSSKKkUuJusjJYJUJuvJvJIkJsYYJuvvvvjIJuYYjJLLsuJYjv\n"
+        "UvukVVkYJsVIJkkUsukLssukkuUquuSVSjIJuJIJuUIuVSXkSSSUXKi         BBBQgJiiBVvsJjUPKkIusjkuIjUIUkPIsYUYjvjuvsvrrvvrvvJYuJuvsYjJUsjsUssukvLrsJjUIUJuvjurvYujJukYJYYuujuvvuIJjUYvYYjLkVUIUkkjIuJJIIPVXkIVUuUs\n"
+        "IUUUuIVVkSjVjsSVsXIUuujIUUUSvuIVIIUJLSXSKVISqqIbVVIUuqr         vBdZdZZdPivPUvYLvvvsuLYjYIukUjLIJkSIukVkVIkXuJvsvuLLUXXXSVuSKXsUVIjKsUjkUjujJuUULuVsjsYUUjJUvsjIuUuuukvXkYvJvsuusUkVUKIXjUkVIVkkKVsIkXuX\n"
+        "JUXuXIkKPPbSSuukuUqKPXqVUuqVISIuSuKVXXXVKUkjksuuuJJsIVZL         gBDPJEEqv ivrLvYvvvjrrLvjsvvuvYJvJLukujvUVSXXXSqbqIIUvUUSVVVKuujjvvkLYYvvJLvvujjVULJvvLLvVJvvsLkJvjIJJSVJJUuJJjkvJkjLkIuuSuIjuJVsXKVuus\n"
+        "vjVVIuYIVqSXuEEkjIKXIKkUuUssIPKkISkUkSLJYjVkuUUYLJYJvuIbdIi      iBUYirBMDSLvkqSggbPuSIjjUuXUsIKZdqqukUXJjsXdjSukusuJvvJurLvvSkusuJkVuvvUUKVIuUILjkKuJvJLVLvvYUUIuIPVuJVKPUSPVVkuJuJLvsssuJuLJvJjsSUuVUY\n"
+        "KkSJuVKIXXjVsUVIVSSukIkXXXKUYYkYYjUuujUJuJvLjJuYkqqUuskPqVQBQYi iDQPBQukDPggMPSPbXSUuqqbZXqVIUuUukkujuuuPbKKuISPPLsdZUksjIJjsvLvvvssuYVsJuPXULjvvUVYjjkYkUJvLvJsvsSVuvIuIUuYujuvjJUJUuISqIJkLuUuUjkjLLJr\n"
+        "KuJkIVvkvYjuIkuuuSjJYIkUYUujrvskYUuuJkIIuuuVusYuJuvJkKIIkdPdMMRgQEBBMgPVbdPuYYYJJJvjuJLJJvIuvjjvjjvSuuLJYsYYLIqsvLLJsJLjLLvLUjLukIJJPuVXUvvvrvJuuPIVkPuYVUSbjuKPJrvjYYYvLUJXjKsvUJUPKEdVVKsKYkjSSUjujVSJ\n"
+        "uLuuPIUVuVuuIvukJvJusjuLSkjUPqPKPuJJuvuLSUkuqujJuIdPbDEDPEEPgRgRBQRPDPEZPVqUPSSiIuKVUjKIujvuPuuUIkkYIkJuSkYuIjJrvLLskJIIUJLsUuukPkvuquVVjLuvJvvvkLsuYYUvsvYYILuqusuVSVjSbXXqIusvvYuJLvkLuPEkSIvvYvvLukVL\n"
+        "VujUXSuVKqIkkuLkkjuIuULIuuvUUjUJsuLIuvvKXPXPVuPPPDSqKPPdEPPEDDZgggXKdDKIVuvIPbqqbEPIKPVkUIsuIkvYJIUvLjjjuUjvLjJIUjjLrvLvvUvLuvvvrsXqIsjuUuuUsvYsuVLjkLrsUPvkUIjUISSdjYYKSuIPqPEPVZVvuLrUrusuLvrjUIuvLLLs\n"
+        "LvuuksujuJujYjLsksuJkJKqkskkjIvrkrvUuSZPDbPPPPdPPEPPdXPXuqdPZIXkKuvuvjXVkXdKIqPqJLUVkUuVuJJuUSkuVJKuuvrvYvusuuVIkuKujusrvLLvjvsvvvvrirvvjvvrUSUukusUkkIvrJXvLVILvLYvjJjvjvrvjYsvYkUJuvvvrvrvUYvvYvXUJsjr\n"
+        "sLsYYYJULLvvvuLuvLvrvivYuUsYuIuqkukSSusukUuukIUIkPuuVkjJIYsJrriivriUvvsvrYvvivvvYvvuvvLkUkusvuukuXuJLuUuLJYsuvsvUkJuJVUkuuLJUKjsLUvjvvLvrUvYsvvsivvvYvuvivjjvvvvrJYvrvvvvkYvrvvYvYvvLsvvsvJkVULvsYvuIsvr\n");
+
+
+
+
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+
+
+
+    {
+        char string[4000] ="You stepped back, balancing your weight on your left foot, and threw your right fist out in a curved punch at the orc's temple.\n"
+                           "Turning ninety degrees to the side, he brought his right forearm up to counter the blow, formed a fist with his left, and threw it at your outstretched jaw.\n"
+                           "You were in trouble. With one hit the orc flew you on your back.\n"
+                           "You quickly got back up and decided to take another route, you saw a knife stashed next to one of the orc's legs so you decided to somehow take it from him.\n"
+                           "As you charged towards him, the orc tried to land a haymaker on you. You dodged it very close and it almost hit you but that didn't stop you from taking the knife and stabbing ZARAUGUG to death.\n"
+                           "You were victorious, the other orcs seeing this got scared and ran away from the cave as soon as possible.\n"
+                           "As you were looking for clues you saw ZARAUGUG's sword which had an inscription on it, 'BLADE OF THE BERSERKER'. You took the sword and left back to the portal you came from.";
+        // Extract the first token
+        char * token = strtok(string, " ");
+        // loop through the string to extract all other tokens
+        while( token != NULL )
+        {
+            Sleep(300);
+            printf( " %s", token ); //printing each token
+            token = strtok(NULL, " ");
+        }
+
+    }
+
+
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+
+
+
+
+
+
+    printf(
+        "                                                                                                                                         ivri        \n"
+        "                                                                                                                                ivPBBBBBBQPsr        \n"
+        "                                                                                                                    ii       vXRBBMMgQRBBBQBBBQBBBBBU\n"
+        "                                                                                                                ivsi     iuEBQQggggDgZggRgRRBBBBBBIi \n"
+        "                                                                                                            iYSXJriiiYKMQBQMDDdZEZZgZDZggQQBBBDr     \n"
+        "                                                                                                         rVbPUvrvJbRBQBQgZgZDdZEDZDZggQQBBBgr        \n"
+        "                                                                                                     iYqPXYvvuXMBBBQggEDEDEDdDEgDgZQQBBBQv           \n"
+        "                                                                                                  vXZPUvvYXZBBBBBggDgDDEgZDEgDggRMBBBPv              \n"
+        "                                                                                              iIdZXuvJubMBBBQBRRMggMDgDgDggggRMBBBQP                 \n"
+        "                                                                                          ivPEdkjYUKgQBBBQQMRgMgMgggMgRgRRQQBBBBKi                   \n"
+        "                                                                                       rIEdKuJJSPQBBBQQQMQggDDEgDggggRRQBBBBBu                       \n"
+        "                                                                                   ijPDPVJUVZMQBBQQgRgRgMgMggZgZDZggQQBBBbr                          \n"
+        "                                                                               ivqEZSkjIKgBBBRRBQMQQDMDgZgDMDRMQMQBBBBJi                             \n"
+        "                                                                            vVDdPuukqdQBBQBZRDggZgQMMEgZgDMgRMQBBBZi                                 \n"
+        "                                                                        irsPPVukSDRBQBBBQQdgQRZEdMgMgDEgDMgQBBBQr                                    \n"
+        "                                                                     ivYuYsuXdggBBgZQQQQgPDRgEEbgMQRQMDZMBBBBY                                       \n"
+        "                                                                 iiiiLYjkdRQBBRQBMbQQQgDPPZMEZbMMRgQRQBBBBI                                          \n"
+        "                                                             irvvvvvsuVPQbgQBgQMMEgQQMEEMggEEZQMQRQQBBBdi                                            \n"
+        "                                                         iruIIjusUkSqgMQBBRKKRMZdgMQMRERRQEEEMQBQBQBgi                                               \n"
+        "                                                     iirvLUuJJUVdZgQBBBQgDRdKJKEMMQQgbgRQDDPbgBBBBv                                                  \n"
+        "                                            iv   iirvvvvvvvvuqPDgQgQQBBBdZDqqSsZDQRRdbMgqZQBBBBs                                                     \n"
+        "                                            EE    iiiiriirJkIKgMRZZPgMDVXPgDDEgMDbKkkrKgBQBBS                                                        \n"
+        "                                       S iLjYqBs  iiirvisQQBQMdDgQRgPPPgMMPZqgESsJjqMBBBBX                                                           \n"
+        "                                       BdiuSXPdjYi rjUuvRQBBBQMQDqPPDgQDDXPPVuvisEBBBBq                                                              \n"
+        "                                       rBBjPIurYvYJjVQMZdQRQgEXVPRRRdEdZSsjrruEBBBBS                                                                 \n"
+        "                                        IBRBBirLPPqKZDQRQPviuqRQBZZSKEXviiiSBBBQV                                                                    \n"
+        "                                         YBBBQIPbBBBBBSDZZdgZDDRgKqkjiriuBBBBU                                                                       \n"
+        "                                          rBRPMDQRDdUvr rBQKPKPXsiiivkBBBQu                                                                          \n"
+        "                                         vPBQBBQkuukvvXU  KZUkvi rUBQBBY                                                                             \n"
+        "                                      vPBBBBBBMBirXuPSiiu  rkruZBBBQr                                                                                \n"
+        "                                  ikgBBBBgi    gBviiUPv  k  PBQBDi                                                                                   \n"
+        "                              ivdBBBBBZi        QBk  ivirQBBBBY                                                                                      \n"
+        "                           iugBBBBBK             BBu SQBBBQs                                                                                         \n"
+        "                       iJPQQBQBBu                 QBBBBBi                                                                                            \n"
+        "                    iVgBQBBBBJ                     IQqi                                                                                              \n"
+        "                isdRBQBQBDv                                                                                                                          \n"
+        "            ivXQBBQBBQv                                                                                                                              \n"
+        "         iSDBBBBBbr                                                                                                                                  \n"
+        "     iJZQBBBBBP                                                                                                                                      \n"
+        " LDkggBBBQBIi                                                                                                                                        \n"
+        "rBrBBBBDi                                                                                                                                            \n"
+        " BBBu                                                                                                                                                \n"
+        "  i                                                                                                                                                  \n");
+
+
+    Sleep (1000);
+    //Sterg ecranul
+    system("@cls||clear");
+
+
+    int ready;
+    printf("ARE YOU READY TO GO BACK?\n");
+    printf("1.YES\n"
+           "2.NO\n");
+    scanf("\n%d",&ready);
+
+    if(ready==1)
+    {
+        ++boss1;
+        start_zone();
+
+    }
+    else if(ready==2)
+        question();
+
+
+
+
+
+
+}
+
+
+
+
+
+
+void question()
+{
+    int ready;
+    printf("ARE YOU READY TO GO BACK?\n");
+    printf("1.YES\n"
+           "2.NO\n");
+    scanf("\n%d",&ready);
+
+    if(ready==1)
+    {
+        ++boss1;
+        start_zone();
+
+    }
+    else if(ready==2)
+        question();
+
+
+
+}
+
+void alegere2()
+{
+    int questsat;
+    printf("Loading....");
+    system("cls||clear");
+    Sleep(1);
+    printf("....."); //POVESTE LA CUM A AJUNS CARACTERUL AICI
+    system("cls||clear");
+    Sleep(1);
+    printf("IMAGINE SAT");
+    system("cls||clear");
+    Sleep(1);
+    printf("Descriere sat\n"
+           "Vrei sa ii ajuti?\n"
+           "1.Da\n"
+           "2.Nu\n");
+    scanf("%d",&questsat);
+    if(questsat==1)
+        helpsat();
+    else if(questsat==2)
+        nothelp();
+}
+void helpsat()
+{
+    int alegeresat;
+    system("cls||clear");
+    Sleep(1);
+    printf("Du-te omoara niste mobi pentru sateni\n"
+           "In padure ai omorat 5 lupi\n"
+           "Ai luat de pe jos 5 bucati de carne\n"
+           "Cand te ai dus inapoi in sat, ai realizat ca sunt atacati");
+    printf("Vrei sa ii ajuti sa lupte contra hoti?\n");
+    printf("1.Da\n"
+           "2.Fugi\n");
+    scanf("%d",&alegeresat);
+    if(alegeresat==1)
+        fightback();
+    else if(alegeresat==2)
+    {
+        printf("lol pussy you ran");
+    }
+}
+void fightback() //LUPTA DIN SAT
+{
+    int bataie;
+    system("cls||clear");
+    Sleep(1);
+    printf("Ai 3 inamici in fata\n"
+           "Unul dintre ei da charge spre tine\n"
+           "Ce faci?\n"
+           "1.Dai dodge la stanga\n"
+           "2.Dai dodge la dreapta\n");
+    scanf("%d",&bataie);
+    if(bataie==1)
+    {
+        int choicebataie;
+        printf("You didn't dodge the hit\n"
+               "Now your head is at your feet\n"
+               "Do you wanna try again?\n"
+               "1.Yes\n"
+               "2.Not yet\n");
+        scanf("%d",&choicebataie);
+        if(choicebataie==1)
+        {
+            system("cls||clear");
+            Sleep(1);
+            fightback();
+        }
+        else if(choicebataie==2)
+        {
+            loop_fight();
+        }
+    }
+    else if(bataie==2)
+        dodge_hit();
+}
+void loop_fight()
+{
+    system("cls||clear");
+    Sleep(1);
+    int choicebataie;
+    printf("You didn't dodge the hit\n"
+           "Now your head is at your feet\n"
+           "Do you wanna try again?\n"
+           "1.Yes\n"
+           "2.Not yet\n");
+    scanf("%d",&choicebataie);
+    if(choicebataie==1)
+    {
+        system("cls||clear");
+        Sleep(1);
+        fightback();
+    }
+    else if(choicebataie==2)
+    {
+        loop_fight();
+    }
+}
+void nothelp()
+{
+    system("cls||clear");
+    Sleep(1);
+    printf("LOL GET FUCKED VILLIAGERS");
+}
+void dodge_hit()
+{
+    Sleep(3000);
+    system("cls||clear");
+    printf("You succesfully dodge the hit and then followed it up with a clear hit on two of the orcs and afterwards you quickly charged the 3rd one as well and killed it."
+           "\n\nThe villagers were happy that you helped them and they thanked you by telling you were to go forward to the right hand of the Warchief.\n They even had a secret path that wasnt guarded"
+    "\n The way there was very easy to reach. You were very happy that you managed to save the troll village and that they helped you reach the Warchief's right hand man" );
+
+     boss_fight2();
+
+
+}
+
+
+void boss_fight2()
+{
+  system("cls||clear");
+    Sleep(1);
+    int choiceboss2;
+    printf("Karguk the Destroyer jumps in the air lunging his weapon forward\n"
+           "Where do you wanna dodge?\n"
+           "1.Backwards\n"
+           "2.Forwards\n");
+
+     scanf("%d",&choiceboss2);
+
+     if(choiceboss2==1)
+     {
+         loop_bossfight2();
+     }
+     else if(choiceboss2==2)
+     {
+        boss_fight22();
+     }
+
+
+}
+
+
+void loop_bossfight2()
+{
+  system("cls||clear");
+    Sleep(1);
+    int loopboss2;
+  printf("You died,go agian?\n"
+          "1.Yes\n"
+           "2.Not yet\n");
+    scanf("%d",&loopboss2);
+    if(loopboss2==1)
+        boss_fight2();
+    else if(loopboss2=2)
+     loop_bossfight2();
+
+
+}
+
+
+void boss_fight22()
+{
+    int part2boss;
+    printf("After missing his shot and getting his sword stuck in the mud,Karguk is standing with his back towards you\n"
+           "Where you wanna strike him?\n"
+           "1.Leg"
+           "2.Hand");
+    scanf("%d",&part2boss);
+    if(part2boss==1)
+    {
+        printf("You missed his leg, you know what that means...");
+        loop_bossfight2();
+    }
+    else if(part2boss==2)
+    {
+
+        printf("You quickly slashed his hands and then his head. You were victorious\n"
+               "This was clearly a hard fight, you almost lost twice and were exhausted\n"
+               "You picked up his armor and while you were searching around you found a key, might be useful later\n");
+
+
+    Sleep(3000);
+   system("cls||clear");
+
+
+      int ready2;
+    printf("ARE YOU READY TO GO BACK?\n");
+    printf("1.YES\n"
+           "2.NO\n");
+    scanf("\n%d",&ready2);
+
+    if(ready2==1)
+    {
+        ++boss2;
+        start_zone();
+
+
+    }
+    else if(ready2==2)
+        question2();
+
+
+    }
+
+    }
+       void question2()
+{
+    int ready2;
+    printf("ARE YOU READY TO GO BACK?\n");
+    printf("1.YES\n"
+           "2.NO\n");
+    scanf("\n%d",&ready2);
+
+    if(ready2==1)
+    {
+        ++boss2;
+        start_zone();
+
+
+
+    }
+    else if(ready2==2)
+        question2();
+
+
+
+}
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
